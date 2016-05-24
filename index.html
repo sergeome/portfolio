@@ -1,0 +1,142 @@
+<!doctype html>
+<html xmlns:javascript="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Code Company</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/responsiveslides.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+            <div class="logo">
+                <a><img src="images/photo/photo.png" class="logo" alt=""></a>
+                <div class="title">
+                    <a href="#"><h1>SERGEOME</h1></a>
+                </div>
+            </div>
+            <a class="mobile-menu-switcher" href="javascript:void(0);" onclick="mobileMenuAction()">&#9776;</a>
+            <ul class="top-menu">
+                <li><a href="#front">About</a></li>
+                <li><a href="#team">Experience</a></li>
+                <li><a href="#portfolio">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header><!--header-->
+    <div id="front" class="about">
+        <div class="about-wrapper">
+            <h3>Do you need a real coder?</h3>
+            <h4>we are the best code company on earth</h4>
+            <img class="indent-line" src="images/slider-border.png" alt="">
+            <div class="about-content-wrapper">
+            <div class="about-content">work direct with our hands. Also we do a really best graphic designs and our hands are so curved. But don’t worry. What we promise, that you get. Not just bla bla, like our politics ;)</div>
+            </div>
+            <a href="#portfolio" class="cta-button">See our portfolio right now</a>
+        </div>
+    </div><!--about-->
+    <div id="team" class="team">
+        <div class="team-wrapper">
+        <h5>This three cute baby faces do for you everything boo boo</h5>
+        <div class="employees">
+            <div class="employee">
+                <img src="images/Sonjoe.png" alt="">
+                <div class="employee-name">Sonjoe</div>
+                <div class="employee-position">UI/UX, Designs, HTML & CSS</div>
+            </div>
+            <div class="employee">
+                <img src="images/Cohut.png" alt="">
+                <div class="employee-name">Kohut</div>
+                <div class="employee-position">UI/UX, Designs, HTML5 & CSS3, CMS</div>
+            </div>
+            <div class="employee">
+                <img src="images/Fuxxo.png" alt="">
+                <div class="employee-name">Fuxxo</div>
+                <div class="employee-position">UI/UX, Designs</div>
+            </div>
+        </div>
+            <img class="indent-line" src="images/team-line.png" alt="">
+        <div class="team-content">Sometimes we look more better. Especially when we changed our faces in Photoshop. If you want an autogram. No problem. Just give us a 100 bucks and you can have ;)
+        </div>
+        </div>
+    </div>
+        <!--team-->
+    <div id="portfolio" class="portfolio">
+        <div class="portfolio-wrapper">
+            <h5>Heeey! Just look on our portfolio. That we are huge</h5>
+            <div class="portfolio-subtitle">you know, curved hands are curved hands ;)</div>
+                <ul class="portfolio-images">
+                    <li><a href="#"></a><img class="img-circle" src="images/portfolio1.png" alt=""></li>
+                    <li class="active"><a href="#"></a><img class="img-circle" src="images/portfolio2.png" alt=""></li>
+                    <li><a href="#"></a><img class="img-circle" src="images/portfolio3.png" alt=""></li>
+                    <li><a href="#"></a><img class="img-circle" src="images/portfolio4.png" alt=""></li>
+                </ul>
+        <a class="cta-button" href="#contact">Do you want? Contact us!</a>
+        </div>
+    </div>
+        <!--portfolio-->
+    <script>
+        $(function() {
+            // Slideshow 1
+            $(".rslides").responsiveSlides({
+                auto: true,
+                nav: true,
+                speed: 500,
+                prevText: "",   // String: Text for the "previous" button
+                nextText: "",
+                navContainer : "slider-container"
+            });
+        });
+    </script>
+    <div class="testimonials">
+        <div class="testimonials-wrapper">
+            <h5>Clients says</h5>
+            <div class="testimonials-content" id="slider-container">
+                <ul class="rslides">
+                    <li><div class="testimonials-feedback">This three guys rocks. Wath they say, that they did. Not like a lier lier Jimm Carrey. They souls will have a nice wonderfull power for the further projects. I really recommend this hands curved guys, which have nice girls. Because they now it!</div></li>
+                    <li><div class="testimonials-feedback">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus, risus at posuere fringilla, sem elit ullamcorper ipsum, ut consectetur ipsum ante sed magna. Sed nec facilisis dui. Quisque ultrices erat vel enim faucibus viverra.</div></li>
+                    <li><div class="testimonials-feedback">Ut sit amet nunc urna. Nulla accumsan urna non fermentum dignissim. Morbi non nunc non nisl auctor lobortis sed at lectus. Donec ac hendrerit dolor, suscipit pulvinar neque. Donec congue eget metus ac ultricies. Mauris quis ante urna. Duis et lorem ornare, volutpat ipsum quit.</div></li>
+                </ul>
+            </div>
+            <a class="narrow-left rslides1_nav rslides2_nav prev" href="#"></a>
+            <a class="narrow-right rslides1_nav rslides2_nav next" href="#"></a>
+            <img class="indent-line" src="images/team-line.png" alt="">
+            <ul class="rslides">
+                <li><p class="author-info"><span class="author-name">Albert Zweistein</span> | unsuccessful scientist</p></li>
+                <li><p class="author-info"><span class="author-name">Madison West</span> | UX designer</p></li>
+                <li><p class="author-info"><span class="author-name">Gordon Holmes</span> | famous writer</p></li>
+            </ul>
+        </div>
+    </div>
+        <!--testimonials-->
+    <div id="contact" class="contact-form">
+        <h5>Contact us today and you get a professional code</h5>
+        <div class="contact-form-subtitle">our hand curved guys waiting for you</div>
+        <div class="feedback-form">
+            <input type="text" class="low-input" placeholder="Placeholder Name">
+            <input type="text" class="low-input" placeholder="Placeholder Email">
+            <textarea class="message-input" placeholder="Placeholder Message"></textarea>
+            <a href="#" class="send-button">Send this message</a>
+        </div>
+    </div>
+        <!--contact-form-->
+    <footer>
+        <div class="footer-wrapper">
+            <div class="follow-us">Follow us on:</div>
+            <div class="social">
+                    <a href="#" class="social-icon social-facebook social-active"></a>
+                    <a href="#" class="social-icon social-linkedin"></a>
+                    <a href="#" class="social-icon social-pinterest"></a>
+                    <a href="#" class="social-icon social-twitter"></a>
+                    <a href="#" class="social-icon social-youtube"></a>
+            </div>
+            <div class="copyright">Copyright 2014 © Designed with curved hands by Tempees.com</div>
+        </div>
+    </footer>
+        <!--footer-->
+</body>
+</html>

@@ -1,0 +1,42 @@
+<i class="social social-facebook"></i>
+<i class="social social-linkedin"></i>
+<i class="social social-pinterest"></i>
+<i class="social social-twitter"></i>
+<i class="social social-youtube"></i>
+
+
+.social {
+    background-image: url(social-sprite.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.social-facebook {
+    width: 36px;
+    height: 36px;
+    background-position: -5px -5px;
+}
+
+.social-linkedin {
+    width: 36px;
+    height: 36px;
+    background-position: -51px -5px;
+}
+
+.social-pinterest {
+    width: 36px;
+    height: 36px;
+    background-position: -97px -5px;
+}
+
+.social-twitter {
+    width: 36px;
+    height: 36px;
+    background-position: -143px -5px;
+}
+
+.social-youtube {
+    width: 36px;
+    height: 36px;
+    background-position: -189px -5px;
+}
