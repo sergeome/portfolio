@@ -55,7 +55,7 @@ h2 {
 }
 
 h3 {
-    font-size: 60px;
+    font-size: 55px;
     font-weight: 700;
 }
 
@@ -97,6 +97,7 @@ header {
 /*Menu*/
 .mobile-menu-switcher{
     display: none;
+    line-height: 50px;
 }
 
 .top-menu {
@@ -214,19 +215,20 @@ ul li {
     background: url("../images/button-shape.png") no-repeat;
 }
 
-.team {
+/*Experience*/
+.experience {
     width: 100%;
     padding: 63px 0 72px 0;
 }
 
-.team-wrapper{
+.experience-wrapper{
     margin: 0 auto;
     max-width: 1140px;
     color: #0d415c;
     text-align: center;
 }
 
-.team-wrapper h5{
+.experience-wrapper h5{
     color: #0d415c;;
 }
 
@@ -257,14 +259,14 @@ ul li {
     color: #618598;
 }
 
-.team-content, .team-content p {
+.experience-content, .experience-content p {
     max-width: 497px;
     margin: 35px auto 0;
     font-size: 15px;
     color: #0d415c;
 }
 
-.team-image-line {
+.experience-image-line {
     margin: 0 auto;
 }
 
@@ -611,8 +613,13 @@ footer{
 }
 
 .social{
-    display: inline-block;
-    margin: 0 0 0 36px;
+    display: block;
+    margin: 0 auto !important;
+    width: 252px;
+}
+
+.social-icon:last-child, .social-icon:hover:last-child {
+    margin-right: 0;
 }
 
 .social-icon {
