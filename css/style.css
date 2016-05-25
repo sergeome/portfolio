@@ -286,17 +286,25 @@ ul li {
 
 .portfolio-images{
     margin: 76px auto 59px;
+    overflow: hidden;
 }
 
 .portfolio-images li{
-    display: inline-block;
+    display: block;
+    float: left;
     position: relative;
     margin: 0 70px 0 0;
     width: 180px;
     height: 180px;
-    overflow: hidden;
     border-radius: 50%;
     z-index: 25;
+    border: 5px solid #618598;
+    padding: 10px;
+}
+
+.portfolio-images li p {
+    color: red;
+    margin: 20px 0 0 0;
 }
 
 .portfolio-images li a{
@@ -324,6 +332,7 @@ ul li {
     height: 180px;
     top: 0;
     left: 0;
+    border-radius: 50%;
 }
 
 .portfolio-images li a:hover:after{
