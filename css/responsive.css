@@ -1,8 +1,7 @@
-@media screen and (max-width: 1018px) {
+@media screen and (max-width: 1170px) {
 
-    .header-wrapper{
-        margin-left: 2%;
-    }
+}
+@media screen and (max-width: 1018px) {
 
     .employee{
         margin: 0 10%;
@@ -34,11 +33,6 @@
 
     .top-menu li:not(:last-child) {
         background: none;
-    }
-
-    /*Disable top logo*/
-    img.logo{
-        /*display: none;*/
     }
 
     /*Disable narrows in the testimonials content*/
@@ -250,16 +244,6 @@
         float: none;
         text-align: center;
         margin: 20px 0;
-    }
-
-    .social{
-        display: block;
-        margin: 0 auto !important;
-        width: 252px;
-    }
-
-    .social-icon:last-child {
-        margin-right: 0;
     }
 
     .copyright {
