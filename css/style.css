@@ -218,7 +218,7 @@ ul li {
 /*Experience*/
 .experience {
     width: 100%;
-    padding: 63px 0 72px 0;
+    padding: 63px 0 0 0;
 }
 
 .experience-wrapper{
@@ -232,36 +232,35 @@ ul li {
     color: #0d415c;;
 }
 
-.employees {
+.works {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
     margin: 44px 0 23px;
 }
 
 .work {
-    display: inline-block;
-    margin: 0 158px;
+    margin: auto;
+    width: 400px;
+}
+.work a:hover {
+    opacity: 0.7;
+}
+.work:nth-child(odd) {
+    /*margin-right: 10%;*/
 }
 
-.work img {
-    max-width: 200px;
-    max-height: 200px;
-}
+/*img should have width 400px - 300px*/
 
-.work:first-child {
-    margin: 0;
-}
-
-.work:last-child {
-    margin: 0;
-}
-
-.work-name, .work-name p {
+.work-title {
     font-size: 24px;
     color: #0d415c;
 }
 
-.work-position, .work-position p {
+.work-description {
     font-size: 13px;
     color: #618598;
+    margin-bottom: 50px;
 }
 
 .experience-content, .experience-content p {
