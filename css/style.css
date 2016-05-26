@@ -249,11 +249,11 @@ ul li {
 }
 .work-item:nth-child(odd){
     float: left;
-    margin: 0 5%;
+    margin: 0 0 0 5%;
 }
 .work-item:nth-child(even){
     float: right;
-    margin: 0 5%;
+    margin: 0 5% 0 0;
 }
 .work-item img {
     width: 100%;

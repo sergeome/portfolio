@@ -6,6 +6,13 @@
 
 @media screen and (max-width: 1018px) {
 
+    .skills-wrapper {
+        padding: 0 20px;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
     .work-items {
         margin: 2em 5% 0;
     }
@@ -13,11 +20,6 @@
         float: none;
         margin: 0 auto;
     }
-
-    .skills-wrapper {
-        padding: 0 20px;
-    }
-
 }
 
 @media screen and (max-width: 920px) {
