@@ -14,23 +14,7 @@
         margin: 0 auto;
     }
 
-    .portfolio-images{
-        margin: 0 0 59px;
-    }
-
-    .portfolio-images li {
-        margin: 55px 0 0;
-    }
-
-    .portfolio-images li:nth-child(2n){
-        margin-right: 15%;
-    }
-
-    .portfolio-images li:nth-child(1n){
-        margin-left: 15%;
-    }
-
-    .testimonials-wrapper {
+    .skills-wrapper {
         padding: 0 20px;
     }
 
@@ -42,7 +26,7 @@
         background: none;
     }
 
-    /*Disable narrows in the testimonials content*/
+    /*Disable narrows in the skills content*/
     .narrow-left, .narrow-right {
         display: none;
     }
@@ -162,7 +146,7 @@
 
     /*Modifying styles for the Slider*/
 
-    .slider-wrapper {
+    .about-wrapper {
         padding: 10% 10% 12%;
     }
 
@@ -171,7 +155,7 @@
     }
 
 
-    .slider-content-wrapper {
+    .about-content-wrapper {
         margin-top: 8%;
         margin-bottom: 8%;
     }
@@ -183,40 +167,25 @@
         padding: 5% 0;
     }
 
-    .team-wrapper {
+    .works-wrapper {
         padding: 0 10%;
-    }
-
-    .employees {
-        margin: 0;
-    }
-
-    /*Employee displaying in a column*/
-    .employee {
-        display: block;
-        margin: 30px 0 0 0 !important;
     }
 
 
     /*Modifying styles for the Portfolio section*/
 
-    .portfolio-wrapper{
+    .experience-wrapper{
         padding: 0 10%;
     }
 
-    .portfolio {
+    .experience {
         padding: 5% 0;
     }
 
-    .portfolio-images li {
-        display: block;
-        margin: 30px auto !important;
-    }
 
+    /*Modifying styles for the skills setcion*/
 
-    /*Modifying styles for the Testimonials setcion*/
-
-    .testimonials-wrapper {
+    .skills-wrapper {
         margin: 5% 0;
         padding: 0 10%;
     }
@@ -225,14 +194,6 @@
 
     .contact-form {
         padding: 5% 10%;
-    }
-
-    .low-input {
-        width: 100%;
-    }
-
-    .message-input {
-        width: 100%;
     }
 
     .send-button {

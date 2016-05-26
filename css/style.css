@@ -215,7 +215,7 @@ ul li {
     background: url("../images/button-shape.png") no-repeat;
 }
 
-/*Experience*/
+/*Works*/
 .works {
     width: 100%;
     padding: 63px 0 0 0;
@@ -273,6 +273,8 @@ ul li {
     margin-bottom: 50px;
 }
 
+
+/*Experience*/
 .experience-content, .experience-content p {
     max-width: 497px;
     margin: 35px auto 0;
@@ -284,119 +286,32 @@ ul li {
     margin: 0 auto;
 }
 
-.portfolio{
+.experience{
     width: 100%;
     background: #00AE86;
     text-align: center;
     padding: 50px 0 60px;
 }
 
-.portfolio-subtitle, .portfolio-subtitle p {
+.experience-subtitle, .experience-subtitle p {
     font-weight: 300;
     font-size: 18px;
     text-shadow: 0 1px 3px rgba(6, 6, 6, 0.18);
     line-height: 30px;
 }
 
-.portfolio-images{
-    margin: 76px auto 59px;
-}
-
-.portfolio-images li{
-    display: inline-block;
-    position: relative;
-    margin: 0 70px 0 0;
-    width: 180px;
-    height: 180px;
-    overflow: hidden;
-    border-radius: 50%;
-    z-index: 25;
-}
-
-.portfolio-images li a{
-    display: block;
-    position: absolute;
-    height: 180px;
-    width: 180px;
-    border-radius: 50%;
-    z-index: 20;
-}
-
-.portfolio-images li a:after {
-    display: block;
-    content: " ";
-    width: 180px;
-    height: 180px;
-}
-
-.portfolio-images li a:before {
-    display: block;
-    position: absolute;
-    z-index: -10;
-    content: " ";
-    width: 180px;
-    height: 180px;
-    top: 0;
-    left: 0;
-}
-
-.portfolio-images li a:hover:after{
-    background: url("../images/plus.png") no-repeat 76px center;
-}
-
-.portfolio-images li a:hover:before{
-    background: #506c7b;
-    opacity: 0.45;
-    transition: .6s;
-}
-
-.portfolio-images li.active a:after {
-    display: block;
-    content: " ";
-    width: 180px;
-    height: 180px;
-    background: url("../images/plus.png") no-repeat 76px center;
-}
-
-.portfolio-images li.active a:before {
-    display: block;
-    position: absolute;
-    z-index: -10;
-    content: " ";
-    width: 180px;
-    height: 180px;
-    top: 0;
-    left: 0;
-    background: #506c7b;
-    opacity: 0.45;
+.experience .cta-button {
+    margin-top: 40px;
 }
 
 
-.portfolio-images li:first-child{
-    margin-left: 0;
-}
-
-.portfolio-images li:last-child{
-    margin-right: 0;
-}
-
-.portfolio-images li:nth-child(2){
-    margin-right: 130px;
-}
-
-.img-circle{
-    position: relative;
-    border-radius: 50%;
-    width: 180px;
-    height: 180px;
-}
-
-.testimonials{
+/*Skills*/
+.skills{
     width: 100%;
     text-align: center;
 }
 
-.testimonials-wrapper{
+.skills-wrapper{
     color: #0d415c;
     max-width: 1140px;
     margin: 55px auto 72px;
@@ -404,125 +319,33 @@ ul li {
     overflow: hidden;
 }
 
-.testimonials-wrapper h5 {
+.skills-wrapper h5 {
     color: #0d415c;
 }
 
-.narrow-left{
-    display: inline-block;
-    width: 55px;
-    height: 55px;
-    float: left;
-    margin: 30px 0 0;
-    background: url("../images/left-narrow.png");
-}
-
-.narrow-right{
-    display: inline-block;
-    width: 55px;
-    height: 55px;
-    float: right;
-    margin: 30px 0 0;
-    background: url("../images/right-narrow.png");
-}
-
-.testimonials-content {
+.skills-content {
     display: inline-block;
     max-width: 693px;
     margin: 25px auto 16px;
 }
 
-.testimonials-feedback, .testimonials-feedback p{
+.skills-feedback, .skills-feedback p{
     font-size: 15px;
     font-style: italic;
     color: #0d415c;
 }
 
-.testimonials-line{
+.skills-line{
     display: block;
     margin: 0 auto 27px;
 }
 
-.author-name{
-    font-family: "Roboto Bold", sans-serif;
-    font-size: 13px;
-    font-weight: bold;
-    color: #2d4a59;
-}
 
-.author-info{
-    font-family: "Roboto", sans-serif;
-    font-size: 13px;
-    color: #708b99;
-    margin-top: 27px;
-}
-
-/*testimonials-slider*/
-
-.rslides {
-    position: relative;
-    list-style: none;
-    overflow: hidden;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-.rslides li {
-    -webkit-backface-visibility: hidden;
-    position: absolute;
-    display: none;
-    width: 100%;
-    left: 0;
-    top: 0;
-}
-
-/*testimonials-slider-end*/
-
-
+/*Contact*/
 .contact-form{
     padding: 46px 0 85px;
     background: #223139;
     text-align: center;
-}
-
-.contact-form-subtitle, .contact-form-subtitle p {
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
-}
-
-.low-input{
-    display: block;
-    width: 502px;
-    height: 48px;
-    border: 1px solid #ffffff;
-    border-radius: 50px;
-    margin: 10px auto 0;
-    text-align: center;
-    font-family: "Roboto Medium", sans-serif;
-    font-size: 15px;
-    /*padding: 14px 162px;*/
-    transition: .5s ease-in-out;
-}
-
-.low-input:focus, .message-input:focus{
-    box-shadow: inset 0 0 40px rgba(0, 47, 71, .5), 0 0 20px rgba(0, 47, 71, .2);
-}
-
-.message-input {
-    display: block;
-    width: 502px;
-    border: 1px solid #ffffff;
-    border-radius: 30px;
-    margin: 10px auto;
-    padding: 50px 0;
-    font-family: "Roboto Medium", sans-serif;
-    font-size: 15px;
-    text-align: center;
-    overflow: hidden;
-    resize: none;
-    transition: .5s ease-in-out;
 }
 
 .send-button {
@@ -532,74 +355,6 @@ ul li {
     border: 2px solid #ffffff;
     padding: 16px 83px;
     border-radius: 25px;
-}
-
-input::-webkit-input-placeholder {
-    color: #8ea6b3 !important;
-}
-
-input:-moz-placeholder { /* Firefox 18- */
-    color: #8ea6b3 !important;
-}
-
-input::-moz-placeholder {  /* Firefox 19+ */
-    color: #8ea6b3 !important;
-}
-
-input:-ms-input-placeholder {
-    color: #8ea6b3 !important;
-}
-
-textarea::-webkit-input-placeholder {
-    color: #8ea6b3 !important;
-}
-
-textarea:-moz-placeholder { /* Firefox 18- */
-    color: #8ea6b3 !important;
-}
-
-textarea::-moz-placeholder {  /* Firefox 19+ */
-    color: #8ea6b3 !important;
-}
-
-textarea:-ms-input-placeholder {
-    color: #8ea6b3 !important;
-}
-
-.error {
-    background: red;
-}
-
-input.error::-webkit-input-placeholder {
-    color: #ffffff !important;
-}
-
-input.error:-moz-placeholder { /* Firefox 18- */
-    color: #ffffff !important;
-}
-
-input.error::-moz-placeholder { /* Firefox 19+ */
-    color: #ffffff !important;
-}
-
-input.error:-ms-input-placeholder {
-    color: #ffffff !important;
-}
-
-textarea.error::-webkit-input-placeholder {
-    color: #ffffff !important;
-}
-
-textarea.error:-moz-placeholder { /* Firefox 18- */
-    color: #ffffff !important;
-}
-
-textarea.error::-moz-placeholder { /* Firefox 19+ */
-    color: #ffffff !important;
-}
-
-textarea.error:-ms-input-placeholder {
-    color: #ffffff !important;
 }
 
 .feedback-form{
