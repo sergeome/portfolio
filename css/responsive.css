@@ -3,6 +3,18 @@
         margin-left: 2%;
     }
 }
+
+@media screen and (max-width: 1000px){
+    .works {
+        margin: 2em 5% 0;
+    }
+    .work:nth-child(odd), .work:nth-child(even){
+        float: none;
+        margin: 0 auto;
+    }
+
+}
+
 @media screen and (max-width: 1018px) {
 
     .employee{

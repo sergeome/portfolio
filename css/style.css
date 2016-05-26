@@ -233,21 +233,31 @@ ul li {
 }
 
 .works {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*align-content: center;*/
     margin: 44px 0 23px;
+    overflow: hidden;
 }
 
 .work {
     margin: auto;
-    width: 400px;
+    max-width: 400px;
 }
 .work a:hover {
     opacity: 0.7;
 }
-.work:nth-child(odd) {
-    /*margin-right: 10%;*/
+.work:nth-child(odd){
+    float: left;
+    margin: 0 5%;
+}
+.work:nth-child(even){
+    float: right;
+    margin: 0 5%;
+}
+.work img {
+    width: 100%;
+    height: auto;
 }
 
 /*img should have width 400px - 300px*/
