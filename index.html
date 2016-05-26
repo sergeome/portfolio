@@ -5,6 +5,7 @@
 <!--TODO remove unnecessary tags-->
 <!--TODO replace JQuery with more simple script (smooth navigation)-->
 <!--TODO make sprites for the social networks-->
+<!--TODO optimize Header tags-->
 <html xmlns:javascript="http://www.w3.org/1999/xhtml">
 <head>
     <title>Sergeome</title>
@@ -26,15 +27,15 @@
             </div>
             <a class="mobile-menu-switcher" href="javascript:void(0);" onclick="mobileMenuAction()">&#9776;</a>
             <ul class="top-menu">
-                <li><a href="#front">About</a></li>
-                <li><a href="#experience">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Work</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#portfolio">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </header><!--header-->
-    <div id="front" class="about">
+    <section id="about" class="about">
         <div class="about-wrapper">
             <h3>Hello, I'm Sergey.</h3>
             <h4>Web-developer</h4>
@@ -42,33 +43,33 @@
             <div class="about-content-wrapper">
             <div class="about-content">I'm working with HTML & CSS. Know about jquery</div>
             </div>
-            <a href="#experience" class="cta-button">See recent works</a>
+            <a href="#works" class="cta-button">See recent works</a>
         </div>
-    </div><!--about-->
-    <div id="experience" class="experience">
-        <div class="experience-wrapper">
+    </section><!--about-->
+    <section id="works" class="works">
+        <div class="works-wrapper">
         <h5>Recent works</h5>
-        <div class="works">
-            <div class="work">
+        <div class="work-items">
+            <article class="work-item">
                 <a href="http://server.sergeome.com/portfolio/atii-ecommerce/"><img src="content-images/works/ecommerce.png" alt="ecommerce"></a>
                 <div class="work-title">Ecommerce</div>
                 <div class="work-description">Responsive e-commerce HTML mockup</div>
-            </div>
-            <div class="work">
+            </article>
+            <article class="work-item">
                 <a href="http://slounik.tk"><img src="content-images/works/slounik.png" alt=""></a>
                 <div class="work-title">Online Dictionary</div>
                 <div class="work-description">Belarussian Dictionary based on Wordpress.</div>
-            </div>
-            <div class="work">
+            </article>
+            <article class="work-item">
                 <a href="http://itsgood.by"><img src="content-images/works/news-portal.png" alt=""></a>
                 <div class="work-title">News portal</div>
                 <div class="work-description">Belarussian news portal based on Wordpress</div>
-            </div>
+            </article>
         </div>
 
         </div>
-    </div><!--experience-->
-    <div id="portfolio" class="portfolio" style="clear: both;">
+    </section><!--works-->
+    <section id="portfolio" class="portfolio" style="clear: both;">
         <div class="portfolio-wrapper">
             <h5>Heeey! Just look on our portfolio. That we are huge</h5>
             <div class="portfolio-subtitle">you know, curved hands are curved hands ;)</div>
@@ -80,22 +81,8 @@
                 </ul>
         <a class="cta-button" href="#contact">Do you want? Contact us!</a>
         </div>
-    </div>
-        <!--portfolio-->
-    <script>
-        $(function() {
-            // Slideshow 1
-            $(".rslides").responsiveSlides({
-                auto: true,
-                nav: true,
-                speed: 500,
-                prevText: "",   // String: Text for the "previous" button
-                nextText: "",
-                navContainer : "slider-container"
-            });
-        });
-    </script>
-    <div class="testimonials">
+    </section><!--portfolio-->
+    <section class="testimonials">
         <div class="testimonials-wrapper">
             <h5>Clients says</h5>
             <div class="testimonials-content" id="slider-container">
@@ -114,16 +101,14 @@
                 <li><p class="author-info"><span class="author-name">Gordon Holmes</span> | famous writer</p></li>
             </ul>
         </div>
-    </div>
-        <!--testimonials-->
-    <div id="contact" class="contact-form">
+    </section><!--testimonials-->
+    <section id="contact" class="contact-form">
         <h5>Contact information</h5>
         <div class="feedback-form">
             <a class="cta-button" href="#">Download my CV</a>
             <a class="send-button" href="#">Hire me</a>
         </div>
-    </div>
-        <!--contact-form-->
+    </section><!--contact-form-->
     <footer>
         <div class="footer-wrapper">
 
@@ -135,7 +120,6 @@
                     <a href="#" class="social-icon social-youtube"></a>
             </div>
         </div>
-    </footer>
-        <!--footer-->
+    </footer><!--footer-->
 </body>
 </html>

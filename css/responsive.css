@@ -4,21 +4,14 @@
     }
 }
 
-@media screen and (max-width: 1000px){
-    .works {
-        margin: 2em 5% 0;
-    }
-    .work:nth-child(odd), .work:nth-child(even){
-        float: none;
-        margin: 0 auto;
-    }
-
-}
-
 @media screen and (max-width: 1018px) {
 
-    .employee{
-        margin: 0 10%;
+    .work-items {
+        margin: 2em 5% 0;
+    }
+    .work-item:nth-child(odd), .work-item:nth-child(even){
+        float: none;
+        margin: 0 auto;
     }
 
     .portfolio-images{
