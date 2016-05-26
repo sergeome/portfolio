@@ -7,99 +7,87 @@
     margin: 0;
     padding: 0;
 }
-
 img {
     border: 0;
 }
-
+ul li {
+    list-style: none;
+}
 @font-face {
     font-family: "Gotham Bold";
     src: url("../fonts/GOTHAM-BOLD.TTF");
 }
-
 @font-face {
     font-family: "Gotham Thin";
     src: url("../fonts/GOTHAM-THIN.TTF");
 }
-
 body {
     font-family: "Roboto", sans-serif;
     color: #ffffff;
 }
-
 a {
     text-decoration: none;
     color: #ffffff;
 }
-
 h3, h4, h5, h6 {
     font-family: "Roboto", sans-serif;
     color: #ffffff;
     text-align: center;
 }
-
 p {
     font-family: "Roboto", sans-serif;
     color: #ffffff;
 }
-
 h1 {
     font-family: "Gotham Bold", sans-serif;
     font-size: 24px;
 }
-
 h2 {
     font-family: "Gotham Thin", sans-serif;
     font-size: 13px;
     color: #85a7b9;
 }
-
 h3 {
     font-size: 55px;
     font-weight: 700;
 }
-
 h4 {
     font-size: 24px;
     font-weight: 300;
 }
-
 h5 {
     font-weight: 500;
     font-size: 36px;
 }
 
 
-/*HEADER*/
+/*HEADER section*/
 header {
     width: 100%;
     overflow: hidden;
     padding: 22px 0;
     background: #002f47;
 }
-
 .header-wrapper {
     overflow: hidden;
     max-width: 1140px;
     margin: 0 auto;
 }
-
 .logo {
     display: block;
     float: left;
 }
-
 .title {
     display: block;
     float: left;
     margin: 12px 0 0 20px;
 }
+
 /*Menu*/
 .mobile-menu-switcher{
     display: none;
     line-height: 50px;
 }
-
 .top-menu {
     float: right;
     margin: 8px 0 0 0;
@@ -107,68 +95,43 @@ header {
     font-family: "Roboto", sans-serif;
     font-size: 17px;
 }
-
-ul li {
-    list-style: none;
-}
-
 .top-menu li {
     display: inline-block;
     float: left;
     background: url("../images/border.png") no-repeat right;
 }
-
 .top-menu li:last-child {
     background: none;
 }
-
 .top-menu li a {
     display: block;
     padding: 8px 30px;
 }
-
 .top-menu li.active {
     float: left;
     background: #004359;
     border-radius: 5px;
 }
-
 .top-menu li.active a {
     color: #76a1b8;
 }
-
 .top-menu li:hover {
     background: #004359;
     border-radius: 5px;
 }
-
 .top-menu li a:hover {
     color: #76a1b8;
 }
-
 .top-menu li.mobile-menu-icon {
     display: none;
 }
+
 
 /*ABOUT Section*/
 .about{
     position: relative;
     background: url("../images/slider/slider1.png") no-repeat top center;
 }
-
-/*Commented image background for the big screen resolution*/
-/*.slider:after{*/
-    /*width: 33554428px;*/
-    /*height: 487px;*/
-    /*position: absolute;*/
-    /*content: " ";*/
-    /*top: 0;*/
-    /*right: 0;*/
-    /*background: #002F47;*/
-    /*background-size: contain;*/
-    /*z-index: -10;*/
-/*}*/
-
 .about-wrapper {
     margin: 0 auto;
     padding: 98px 0 77px 0;
@@ -177,19 +140,16 @@ ul li {
 .about-wrapper img {
     margin-top: 22px;
 }
-
 .about-content-wrapper {
     display: block;
     max-width: 530px;
     margin: 25px auto 43px;
 }
-
 .about-content, .about-content p{
     font-weight: 300;
     font-size: 15px;
     color: #b4d1e1;
 }
-
 .cta-button {
     display: inline-block;
     position: relative;
@@ -199,11 +159,9 @@ ul li {
     padding: 16px 69px 16px 47px;
     border-radius: 25px;
 }
-
 .cta-button:hover, .send-button:hover{
     box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
 }
-
 .cta-button:after{
     display: block;
     content: " ";
@@ -215,31 +173,25 @@ ul li {
     background: url("../images/button-shape.png") no-repeat;
 }
 
-/*Works*/
+
+/*WORKS section*/
 .works {
     width: 100%;
     padding: 63px 0 0 0;
 }
-
 .works-wrapper{
     margin: 0 auto;
     max-width: 1140px;
     color: #0d415c;
     text-align: center;
 }
-
 .works-wrapper h5{
     color: #0d415c;;
 }
-
 .work-items {
-    /*display: flex;*/
-    /*flex-wrap: wrap;*/
-    /*align-content: center;*/
     margin: 44px 0 23px;
     overflow: hidden;
 }
-
 .work-item {
     margin: auto;
     max-width: 400px;
@@ -255,18 +207,14 @@ ul li {
     float: right;
     margin: 0 5% 0 0;
 }
-.work-item img {
+.work-item img { /*img should have width 400px - 300px*/
     width: 100%;
     height: auto;
 }
-
-/*img should have width 400px - 300px*/
-
 .work-title {
     font-size: 24px;
     color: #0d415c;
 }
-
 .work-description {
     font-size: 13px;
     color: #618598;
@@ -274,43 +222,38 @@ ul li {
 }
 
 
-/*Experience*/
-.experience-content, .experience-content p {
+/*EXPERIENCE section*/
+.experience-content {
     max-width: 497px;
     margin: 35px auto 0;
     font-size: 15px;
     color: #0d415c;
 }
-
 .experience-image-line {
     margin: 0 auto;
 }
-
 .experience{
     width: 100%;
     background: #00AE86;
     text-align: center;
     padding: 50px 0 60px;
 }
-
 .experience-subtitle, .experience-subtitle p {
     font-weight: 300;
     font-size: 18px;
     text-shadow: 0 1px 3px rgba(6, 6, 6, 0.18);
     line-height: 30px;
 }
-
 .experience .cta-button {
     margin-top: 40px;
 }
 
 
-/*Skills*/
+/*SKILLS section*/
 .skills{
     width: 100%;
     text-align: center;
 }
-
 .skills-wrapper{
     color: #0d415c;
     max-width: 1140px;
@@ -318,36 +261,31 @@ ul li {
     padding: 0 2px;
     overflow: hidden;
 }
-
 .skills-wrapper h5 {
     color: #0d415c;
 }
-
 .skills-content {
     display: inline-block;
     max-width: 693px;
     margin: 25px auto 16px;
 }
-
 .skills-feedback, .skills-feedback p{
     font-size: 15px;
     font-style: italic;
     color: #0d415c;
 }
-
 .skills-line{
     display: block;
     margin: 0 auto 27px;
 }
 
 
-/*Contact*/
-.contact-form{
+/*CONTACT section*/
+.contact{
     padding: 46px 0 85px;
     background: #223139;
     text-align: center;
 }
-
 .send-button {
     display: inline-block;
     font-family: "Roboto Medium", sans-serif;
@@ -356,16 +294,16 @@ ul li {
     padding: 16px 83px;
     border-radius: 25px;
 }
-
 .feedback-form{
     margin: 38px 0 0 0;
 }
 
+
+/*FOOTER section*/
 footer{
     width: 100%;
     background: #223139;;
 }
-
 .footer-wrapper{
     max-width: 1140px;
     overflow: hidden;
@@ -373,72 +311,55 @@ footer{
     padding: 54px 0 57px 0;
     margin: 0 auto;
 }
-
 .follow-us, .follow-us p  {
     float: left;
     font-family: "Roboto Light", sans-serif;
     font-size: 16px;
     margin: 7px 0 0 0;
 }
-
 .social{
     display: block;
     margin: 0 auto !important;
     width: 252px;
 }
-
 .social-icon:last-child, .social-icon:hover:last-child {
     margin-right: 0;
 }
-
 .social-icon {
     display: inline-block;
     background: url(../images/social/social-sprite.png) no-repeat;
     margin-right: 14px;
 }
-
 .social-icon:hover{
     display: inline-block;
     background: url(../images/social/hover/social-sprite-hover.png) no-repeat;
     margin-right: 14px;
 }
-
 .social-facebook, .social-facebook:hover {
     width: 36px;
     height: 36px;
     background-position: -5px -5px;
 }
-
 .social-active {
     background: url(../images/social/hover/social-sprite-hover.png) no-repeat -5px -5px;
 }
-
 .social-linkedin, .social-linkedin:hover {
     width: 36px;
     height: 36px;
     background-position: -51px -5px;
 }
-
 .social-pinterest, .social-pinterest:hover{
     width: 36px;
     height: 36px;
     background-position: -97px -5px;
 }
-
 .social-twitter, .social-twitter:hover {
     width: 36px;
     height: 36px;
     background-position: -143px -5px;
 }
-
 .social-youtube, .social-youtube:hover {
     width: 36px;
     height: 36px;
     background-position: -189px -5px;
-}
-
-.copyright, .copyright p {
-    float: right;
-    margin: 8px 0 0;
-    font-size: 12px;
 }

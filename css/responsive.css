@@ -1,17 +1,18 @@
+/*Adding left indent for header*/
 @media screen and (max-width: 1170px) {
     .header-wrapper{
         margin-left: 2%;
     }
 }
 
+/*Adding indents for skills section*/
 @media screen and (max-width: 1018px) {
-
     .skills-wrapper {
         padding: 0 20px;
     }
-
 }
 
+/*Make .work-items display in a column*/
 @media screen and (max-width: 980px) {
     .work-items {
         margin: 2em 5% 0;
@@ -22,17 +23,12 @@
     }
 }
 
+/*Menu restyle and reduce social icons margin*/
 @media screen and (max-width: 920px) {
 
     .top-menu li:not(:last-child) {
         background: none;
     }
-
-    /*Disable narrows in the skills content*/
-    .narrow-left, .narrow-right {
-        display: none;
-    }
-
     /*Hide elements on the main menu*/
     ul.top-menu {
         display: none;
@@ -45,13 +41,11 @@
         display: block;
         float: right;
         margin: 0 20px 0 0;
-        /*background: url("../images/mobile_menu.png");*/
         font-size: 30px;
         -webkit-tap-highlight-color: rgba(0,0,0,0);
     }
 
     /*Create mobile menu name "responsive" and overwrite styles of top-menu*/
-
     ul.top-menu.responsive {
         clear: both;
         display: block;
@@ -59,7 +53,6 @@
         overflow: hidden;
         margin: 70px 0 0;
     }
-
     ul.top-menu.responsive li {
         clear: both;
         display: block;
@@ -68,63 +61,49 @@
         text-align: center;
         border-top: 1px solid rgba(118, 161, 184, .2);
     }
-
     ul.top-menu.responsive li:first-child {
         border-top: none;
     }
-
-
     ul.top-menu.responsive li.active {
         background: none;
     }
-
     ul.top-menu.responsive li.active a{
         color: #ffffff;
         -webkit-tap-highlight-color: rgba(0,0,0,0);
     }
-
     ul.top-menu.responsive li a{
         -webkit-tap-highlight-color: rgba(0,0,0,0);
     }
-
     ul.top-menu.responsive li.active:hover {
         color: #ffffff;
     }
-
     ul.top-menu.responsive li a:hover{
         color: #ffffff;
     }
-
     ul.top-menu.responsive li:hover {
         background: none;
     }
-
     ul.top-menu.responsive li:first-child{
         background: none;
     }
 
     /*Reduce social icons left margin*/
-
     .social {
         margin: 0 0 0 10px;
     }
 
 }
 
-/*Implemented styles for the mobile menu*/
-
+/*Redefine styles for the mobile version*/
 @media screen and (max-width: 715px) {
 
     /*Fonts overwriting*/
-
     h3 {
         font-size: 32px;
     }
-
     h4 {
         font-size: 19px;
     }
-
     h5 {
         font-size: 28px;
     }
@@ -135,47 +114,36 @@
     }
 
     /*Modifying styles for the buttons - send and cta buttons*/
-
     .cta-button {
         box-sizing: border-box;
         width: 296px;
         padding: 16px 0;
     }
-
     .cta-button:after{
         display: none;
     }
 
-    /*Modifying styles for the Slider*/
-
+    /*Modifying styles for the ABOUT section*/
     .about-wrapper {
         padding: 10% 10% 12%;
     }
-
     .indent-line {
         display: none;
     }
-
-
     .about-content-wrapper {
         margin-top: 8%;
         margin-bottom: 8%;
     }
 
-
-    /*Modifying styles for the Team section*/
-
-    .team {
+    /*Modifying styles for the WORKS section*/
+    .works {
         padding: 5% 0;
     }
-
     .works-wrapper {
         padding: 0 10%;
     }
 
-
-    /*Modifying styles for the Portfolio section*/
-
+    /*Modifying styles for the EXPERIENCE section*/
     .experience-wrapper{
         padding: 0 10%;
     }
@@ -183,55 +151,41 @@
     .experience {
         padding: 5% 0;
     }
-
-
-    /*Modifying styles for the skills setcion*/
-
+    
+    /*Modifying styles for the SKILLS setcion*/
     .skills-wrapper {
         margin: 5% 0;
         padding: 0 10%;
     }
 
-    /*Modifying styles for Contact Form*/
-
-    .contact-form {
+    /*Modifying styles for CONTACT section*/
+    .contact {
         padding: 5% 10%;
     }
-
     .send-button {
         padding: 16px 0;
         width: 50%;
         box-sizing: border-box;
     }
 
-    /*Modifying styles of footer */
-
+    /*Modifying styles of FOOTER*/
     .footer-wrapper {
         padding: 0;
     }
-
     .follow-us {
         float: none;
         text-align: center;
         margin: 20px 0;
     }
+}
 
-    .copyright {
-        float: none;
-        margin: 20px auto;
-        text-align: center;
+/*Added breakpoint in order to fix buttons behavior on small screen resolutions*/
+@media screen and (max-width: 400px){
+    
+    .cta-button {
+        width: 100%;
     }
-
-    /*Added breakpoint in order to fix buttons behavior on small screen resolutions*/
-    @media screen and (max-width: 400px){
-
-        .cta-button {
-            width: 100%;
-        }
-
-        .send-button {
-            width: 100%;
-        }
-
+    .send-button {
+        width: 100%;
     }
 }
