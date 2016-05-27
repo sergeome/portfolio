@@ -10,7 +10,7 @@ $(document).ready(function () {
             rect.right <= (window.innerWidth || document.documentElement.clientWidth)
         );
     }
-    var timelineItems = document.querySelectorAll(".timeline li");
+    var timelineItems = document.querySelectorAll(".timeline li.timeitem");
     var skillList = document.getElementById("skills-list");
 
     // code for the isElementInViewport function
@@ -30,7 +30,26 @@ $(document).ready(function () {
 
     window.addEventListener("load", callbackFunc);
     window.addEventListener("scroll", callbackFunc);
+
+    var offset = 250;
+    var duration = 300;
+    jQuery(".back").css({"display": "none"});
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery(".back").fadeIn(duration);
+        } else {
+            jQuery(".back").fadeOut(duration);
+        }
+
+    });
+    jQuery(".back").click(function(event) {
+        event.preventDefault();
+        jQuery(".back").animate({scrollTop: 0}, duration);
+        return false;
+    })
+
 });
+
 
 //Mobile menu toggle
 function mobileMenuAction() {

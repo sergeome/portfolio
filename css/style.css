@@ -234,7 +234,7 @@ header {
     margin: 50px 0 0 0;
     font-size: 17px;
 }
-.timeline ul li {
+.timeline ul.timelist li.timeitem {
     list-style-type: none;
     position: relative;
     width: 6px;
@@ -242,10 +242,10 @@ header {
     padding-top: 50px;
     background: #fff;
 }
-.timeline ul li:first-child{
+.timeline ul.timelist li.timeitem:first-child{
     padding-top: 0;
 }
-.timeline ul li:after {
+.timeline ul.timelist li.timeitem:after {
     content: '';
     position: absolute;
     left: 50%;
@@ -256,14 +256,14 @@ header {
     border-radius: 50%;
     background: inherit;
 }
-.timeline ul li div {
+.timeline ul.timelist li.timeitem .timeblock {
     position: relative;
     bottom: 0;
     width: 400px;
     padding: 15px;
     background: #F45B69;
 }
-.timeline ul li div:before {
+.timeline ul.timelist li.timeitem .timeblock:before {
     content: '';
     position: absolute;
     bottom: 7px;
@@ -271,19 +271,19 @@ header {
     height: 0;
     border-style: solid;
 }
-.timeline ul li:nth-child(odd) div {
+.timeline ul.timelist li.timeitem:nth-child(odd) .timeblock {
     left: 45px;
 }
-.timeline ul li:nth-child(odd) div:before {
+.timeline ul.timelist li.timeitem:nth-child(odd) .timeblock:before {
     left: -15px;
     border-width: 8px 16px 8px 0;
     border-color: transparent #F45B69 transparent transparent;
 }
-.timeline ul li:nth-child(even) div {
+.timeline ul.timelist li.timeitem:nth-child(even) .timeblock {
     left: -473px;
 }
 
-.timeline ul li:nth-child(even) div:before {
+.timeline ul.timelist li.timeitem:nth-child(even) .timeblock:before {
     right: -15px;
     border-width: 8px 0 8px 16px;
     border-color: transparent transparent transparent #F45B69;
@@ -297,31 +297,36 @@ time {
 }
 .duty{
     text-align: left;
+    padding-top: 20px;
+}
+.duty ul li {
+    list-style-type: disc;
+    list-style-position: inside;
 }
 /*Styles for the animation*/
-.timeline ul li:after {
+.timeline ul.timelist li.timeitem:after {
     transition: background .5s ease-in-out;
 }
 
-.timeline ul li.in-view:after {
+.timeline ul.timelist li.timeitem.in-view:after {
     background: #F45B69;
 }
 
-.timeline ul li div {
+.timeline ul.timelist li.timeitem .timeblock {
     visibility: hidden;
     opacity: 0;
     transition: all .5s ease-in-out;
 }
 
-.timeline ul li:nth-child(odd) div {
+.timeline ul.timelist li.timeitem:nth-child(odd) .timeblock {
     transform: translate3d(200px, 0, 0);
 }
 
-.timeline ul li:nth-child(even) div {
+.timeline ul.timelist li.timeitem:nth-child(even) .timeblock {
     transform: translate3d(-200px, 0, 0);
 }
 
-.timeline ul li.in-view div {
+.timeline ul.timelist li.timeitem.in-view .timeblock {
     transform: none;
     visibility: visible;
     opacity: 1;
@@ -402,6 +407,31 @@ time {
     margin: 13px 10px 0 0;
     font-size: 15px;
     color: #223139;
+}
+ul.extra-skills {
+    float: right;
+    width: 40%;
+}
+ul.extra-skills li{
+    margin-top: 20px;
+    text-align: left;
+}
+ul.extra-skills li p {
+    display: inline-block;
+}
+ul.extra-skills li:first-child{
+    margin-top: 0;
+}
+ul.extra-skills span:first-child {
+    margin-left: 10px;
+}
+ul.extra-skills span{
+    display: inline-block;
+    background: #223139;
+    padding: 3px 10px;
+    border-radius: 5%;
+    color: #fff;
+    margin: 8px 10px 0 0;
 }
 
 
@@ -485,4 +515,12 @@ footer h5 {
 }
 .copyright a:hover:after{
     background: #fff;
+}
+.back{
+    position: fixed;
+    background: url("../images/arrowup.png");
+    width: 64px;
+    height: 64px;
+    right: 20px;
+    bottom: 20px;
 }

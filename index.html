@@ -18,7 +18,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<header>
+<header id="header">
 	<div class="header-wrapper">
 		<div class="logo">
 			<a><img src="images/photo/photo.png" class="logo" alt=""></a>
@@ -37,11 +37,11 @@
 </header><!--header-->
 <section id="about" class="about">
 	<div class="about-wrapper">
-		<h3>Hello, I'm Sergey.</h3>
-		<h4>Web-developer</h4>
+		<h3>Hi, I'm Sergey.</h3>
+		<h4>Front-end developer</h4>
 		<img class="indent-line" src="images/slider-border.png" alt="">
 		<div class="about-content-wrapper">
-			<div class="about-content">I'm working with HTML & CSS. Know about jquery</div>
+			<div class="about-content">Responsible (don't mix up with responsive) programmer.<br> I'm working with web based technologies. </div>
 		</div>
 		<a href="#works" class="button">See recent works</a>
 	</div>
@@ -51,20 +51,20 @@
 		<h5>Recent works</h5>
 		<div class="work-items">
 			<article class="work-item">
-				<a href="http://server.sergeome.com/portfolio/atii-ecommerce/"><img src="content-images/works/ecommerce.png" alt="ecommerce"></a>
+				<a href="http://server.sergeome.com/portfolio/atii-ecommerce/" target="_blank"><img src="content-images/works/ecommerce.png" alt="ecommerce"></a>
 				<div class="work-title">Ecommerce</div>
 				<div class="work-description">Responsive e-commerce HTML mockup</div>
 			</article>
 			<article class="work-item">
-				<a href="http://slounik.tk"><img src="content-images/works/slounik.png" alt=""></a>
+				<a href="http://slounik.tk" target="_blank"><img src="content-images/works/slounik.png" alt=""></a>
 				<div class="work-title">Online Dictionary</div>
 				<div class="work-description">Belarussian Dictionary based on Wordpress.</div>
 			</article>
-			<article class="work-item">
-				<a href="http://itsgood.by"><img src="content-images/works/news-portal.png" alt=""></a>
-				<div class="work-title">News portal</div>
-				<div class="work-description">Belarussian news portal based on Wordpress</div>
-			</article>
+			<!--<article class="work-item">-->
+				<!--<a href="http://itsgood.by"><img src="content-images/works/news-portal.png" alt=""></a>-->
+				<!--<div class="work-title">News portal</div>-->
+				<!--<div class="work-description">Belarussian news portal based on Wordpress</div>-->
+			<!--</article>-->
 		</div>
 	</div>
 </section><!--works-->
@@ -72,65 +72,79 @@
 	<div class="experience-wrapper">
 		<h5>Employment and education</h5>
 		<section class="timeline">
-			<ul>
-				<li>
-					<div>
+			<ul class="timelist">
+				<li class="timeitem">
+					<div class="timeblock">
 						<time>September 2014 - Present</time>
 						<p>HTML & CSS developer (Contactor)</p>
-						<section class="duty">
-							<p>Web sites implementation (including responsive).</p>
-							<p>Pixel perfect replication from the PSD files.</p>
-							<p>Markup integration with CMS (WordPress).</p>
-						</section>
+						<div class="duty">
+							<ul>
+								<li>Web sites implementation (including responsive)</li>
+								<li>Pixel perfect replication from the PSD files</li>
+								<li>Markup integration with CMS (WordPress)</li>
+								<li>VPS/VDS hosting installation (LAMP server) and other</li>
+							</ul>
+						</div>
 					</div>
 				</li>
-				<li>
-					<div>
-						<time>July 2015 - March 2016</time>
+				<li class="timeitem">
+					<div class="timeblock">
+						<time>May 2014 - March 2016</time>
 						<p>EPAM</p>
-						<p>Middle Software testing Engineer</p>
-						<section class="duty">
-							<p>Online Shop testing based on Hybris.</p>
-							<p>Mobile testing (web and native applications).</p>
-						</section>
+						<p>Software testing Engineer</p>
+						<div class="duty">
+							<ul>
+								<li>Functional testing (compatibility testing, integration testing, i18n/localization testing, GUI testing), change-related testing (confirmation testing, regression testing)</li>
+								<li>Requirement analysis</li>
+								<li>Communication with customer</li>
+								<li>Web (responsive) and mobile apps testing</li>
+							</ul>
+						</div>
 					</div>
 				</li>
-				<li>
-					<div>
-						<time>May 2014 - July 2015</time>
-						<p>EPAM</p>
-						<p>Junior Software testing Engineer</p>
-						<section class="duty">
-							<p>Manual testing of app based on Adobe AEM CQ5</p>
-							<p>Communication with customer</p>
-							<p>Compatibility testing, integration testing, i18n/localization testing, GUI testing), change-related testing (confirmation testing, regression testing). </p>
-						</section>
-					</div>
-				</li>
-				<li>
-					<div>
+				<li class="timeitem">
+					<div class="timeblock">
 						<time>March 2012 - August 2013</time>
 						<p>ITCO</p>
 						<p>System Administrator</p>
-						<section class="duty">
-							<p>Local and corporate networks creation.</p>
-							<p>Operating stystem reinstallation</p>
-
-						</section>
+						<div class="duty">
+							<ul>
+								<li>Local and corporate networks creation</li>
+								<li>Operating system reinstallation</li>
+								<li>Data save and restore</li>
+								<li>Configuring of switchboards, modems, routers</li>
+							</ul>
+						</div>
 					</div>
 				</li>
-				<li>
-					<div>
-						<time>September 2013 - March 2014</time>
-						<p>Politecnico di Torino</p>
+				<li class="timeitem education">
+					<div class="timeblock">
+						<time>2013 - 2014</time>
+						<p>Polytechnic University of Turin</p>
 						<p>Telecommunication engineering (Erasmus exchange program)</p>
+						<div class="duty">
+							<ul>
+								<li>Operating systems (including Windows and Linux. Linux's kernel, bash programming language and awk).</li>
+								<li>Programming (c, c++, programming algorithms)</li>
+								<li>Telecommunication engineering (networks based on cisco education program)</li>
+								<li>Italian language</li>
+							</ul>
+						</div>
 					</div>
 				</li>
-				<li>
-					<div>
-						<time>September 2009 - June 2014</time>
+				<li class="timeitem">
+					<div class="timeblock">
+						<time>2009 - 2014</time>
 						<p>Yanka Kupala State University of Grodno</p>
 						<p>Information and measurement technology (Bachelor's degree)</p>
+						<div class="duty">
+							<ul>
+								<li>Scientific research I defended for the diploma: "Broadcast TCP / UDP server for ADAM-5510 controller"</li>
+								<li>Worked with SCADA (supervisory control and data acquisition) and smaller control systems (for example: systems for programmable logic controllers PLC)</li>
+								<li>Project development for creating ActiveX component, projects including technologies TCP/UDP, FTP</li>
+								<li>Studied programming languages</li>
+							</ul>
+						</div>
 					</div>
 				</li>
 			</ul>
@@ -145,33 +159,42 @@
 				<li class="skill">
 					<div class="skill-name">HTML</div>
 					<div class="loader">
-						<div class="loader-bar" data-percent="75%"></div>
+						<div class="loader-bar" data-percent="80%"></div>
 					</div>
-					<div class="percent">75%</div>
+					<div class="percent">80%</div>
 				</li>
 				<li class="skill">
 					<div class="skill-name">CSS</div>
 					<div class="loader">
-						<div class="loader-bar" data-percent="55%"></div>
+						<div class="loader-bar" data-percent="70%"></div>
 					</div>
-					<div class="percent">55%</div>
+					<div class="percent">70%</div>
 				</li>
 				<li class="skill">
 					<div class="skill-name">JQuery</div>
 					<div class="loader">
-						<div class="loader-bar" data-percent="35%"></div>
+						<div class="loader-bar" data-percent="30%"></div>
 					</div>
-					<div class="percent">35%</div>
+					<div class="percent">30%</div>
 				</li>
 				<li class="skill">
-					<div class="skill-name">Lorem</div>
+					<div class="skill-name">PHP</div>
 					<div class="loader">
-						<div class="loader-bar" data-percent="90%"></div>
+						<div class="loader-bar" data-percent="20%"></div>
 					</div>
-					<div class="percent">90%</div>
+					<div class="percent">20%</div>
 				</li>
 			</ul>
-			<p style="float: right; width: 40%">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aut corporis dolorem enim eos error est ex fugiat in iusto libero maxime, minima mollitia nihil non officiis quae vel veniam.</p>
+			<ul class="extra-skills">
+				<li>
+					<p>Additional FRONT-END technologies, preprocessors, engines and frameworks I work with:<span>LESS</span><span>Bootstrap 3 framework</span><span>WordPress</span><span>Javascirpt</span>
+					</p>
+				</li>
+				<li><p>Project or team related technologies and tools I know:
+					<span>Jira</span><span>GIT</span><span>INvision</span><span>Trello</span></p></li>
+				<li><p>Technologies I worked with: <span>Adobe AEM 5.6</span><span>Hybris</span></p></li>
+				<li><p>As System Administrator I know: <span>Linux</span><span>VPS/VDS</span></p></li>
+			</ul>
 		</div>
 	</div>
 </section><!--skills-->
@@ -179,15 +202,16 @@
 	<div class="footer-wrapper" id="contact">
 		<h5>Contact information</h5>
 		<p class="availability">I’m currently available for work. If you want to hire me, think you need my help or just saying hey, then get in touch with me.</p>
-		<a class="button" href="#">Download my CV</a>
-		<a class="button send" href="#">Hire me</a>
+		<a class="button" href="https://drive.google.com/file/d/0BxWxhRhs7vIqeHhxWFg4V1dSSXc/view?usp=sharing" target="_blank">Download my CV</a>
+		<a class="button send" href="mailto:sergeome@gmail.com">Hire me</a>
 		<div class="social">
-			<a href="#" class="icon linkedin"></a>
-			<a href="#" class="icon github"></a>
-			<a href="#" class="icon bitbucket"></a>
+			<a href="https://www.linkedin.com/in/sergeome" target="_blank" class="icon linkedin"></a>
+			<a href="https://bitbucket.org/sergeome/" target="_blank" class="icon github"></a>
+			<a href="https://github.com/sergeome" target="_blank" class="icon bitbucket"></a>
 		</div>
 		<p class="copyright">© 2016 <a href="http://sergeome.com">Sergey Kryvets</a>. All rights reserved.</p>
 	</div>
 </footer>
+<a href="#header" class="back"></a>
 </body>
 </html>
