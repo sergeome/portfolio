@@ -150,7 +150,7 @@ header {
     font-size: 15px;
     color: #b4d1e1;
 }
-.cta-button {
+.button {
     display: inline-block;
     position: relative;
     font-weight: 500;
@@ -158,11 +158,12 @@ header {
     border: 2px solid #ffffff;
     padding: 16px 69px 16px 47px;
     border-radius: 25px;
+    transition: .3s;
 }
-.cta-button:hover, .send-button:hover{
+.button:hover {
     box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
 }
-.cta-button:after{
+.button:after{
     display: block;
     content: " ";
     width: 20px;
@@ -312,7 +313,7 @@ header {
     visibility: visible;
     opacity: 1;
 }
-.experience .cta-button {
+.experience .button {
     margin-top: 40px;
 }
 
@@ -333,101 +334,141 @@ header {
     color: #0d415c;
 }
 .skills-content {
-    display: inline-block;
-    max-width: 693px;
-    margin: 25px auto 16px;
+    display: block;
+    overflow: hidden;
+    margin: 25px 0 16px 0;
 }
-.skills-feedback, .skills-feedback p{
+.skills p{
     font-size: 15px;
-    font-style: italic;
     color: #0d415c;
 }
-.skills-line{
-    display: block;
-    margin: 0 auto 27px;
+.skills-list {
+    float: left;
+    width: 54%;
+    margin: 0 auto;
 }
-
-
-/*CONTACT section*/
-.contact{
-    padding: 46px 0 85px;
+.skill {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #eee;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.skill:last-child {
+    margin-bottom: 0;
+}
+.skill-name {
+    width: 17%;
+    float: left;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 13px 10px 13px 10px;
+    color: #fff;
     background: #223139;
-    text-align: center;
+    border-radius: 5px 0 0 5px;
+    box-sizing: border-box;
 }
-.send-button {
-    display: inline-block;
-    font-family: "Roboto Medium", sans-serif;
+.loader {
+    height: 50px;
+    width: 83%;
+    margin-left: 17%;
+    box-sizing: border-box;
+}
+.loader-bar {
+    background: #597782;
+    border-radius: 0 5px 5px 0;
+    height: 50px;
+    width: 0;
+    transition: 1.5s;
+}
+.percent {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    margin: 13px 10px 0 0;
     font-size: 15px;
-    border: 2px solid #ffffff;
-    padding: 16px 83px;
-    border-radius: 25px;
-}
-.feedback-form{
-    margin: 38px 0 0 0;
+    color: #223139;
 }
 
 
-/*FOOTER section*/
+/*Footer section*/
 footer{
     width: 100%;
     background: #223139;;
 }
 .footer-wrapper{
+    padding: 46px 0 25px;
     max-width: 1140px;
-    overflow: hidden;
-    border-top: 1px solid #747d82;
-    padding: 54px 0 57px 0;
+    background: #223139;
+    text-align: center;
     margin: 0 auto;
 }
-.follow-us, .follow-us p  {
-    float: left;
-    font-family: "Roboto Light", sans-serif;
-    font-size: 16px;
-    margin: 7px 0 0 0;
+footer h5 {
+    margin: 0 0 33px 0;
 }
+.availability {
+    margin-bottom: 50px;
+    font-style: italic;
+}
+.send {
+    padding: 16px 83px;
+    margin: 0 0 0 10%;
+}
+.send:after{
+    content: none;
+}
+
+/*FOOTER section*/
 .social{
     display: block;
-    margin: 0 auto !important;
-    width: 252px;
+    margin: 50px auto 30px;
+    width: 144px;
 }
-.social-icon:last-child, .social-icon:hover:last-child {
+.icon:last-child, .icon:hover:last-child {
     margin-right: 0;
 }
-.social-icon {
+.icon {
     display: inline-block;
-    background: url(../images/social/social-sprite.png) no-repeat;
-    margin-right: 14px;
-}
-.social-icon:hover{
-    display: inline-block;
-    background: url(../images/social/hover/social-sprite-hover.png) no-repeat;
-    margin-right: 14px;
-}
-.social-facebook, .social-facebook:hover {
     width: 36px;
     height: 36px;
+    background: url(../images/social/social.png) no-repeat top center;
+    margin-right: 14px;
+}
+.linkedin {
+    background-position: -97px -5px;;
+}
+.linkedin:hover {
+    background-position: -97px -51px;
+}
+.github {
+    background-position: -5px -51px;
+}
+.github:hover {
+    background-position: -51px -51px;
+}
+.bitbucket {
     background-position: -5px -5px;
 }
-.social-active {
-    background: url(../images/social/hover/social-sprite-hover.png) no-repeat -5px -5px;
-}
-.social-linkedin, .social-linkedin:hover {
-    width: 36px;
-    height: 36px;
+.bitbucket:hover {
     background-position: -51px -5px;
 }
-.social-pinterest, .social-pinterest:hover{
-    width: 36px;
-    height: 36px;
-    background-position: -97px -5px;
+.copyright {
+    font-size: 12px;
 }
-.social-twitter, .social-twitter:hover {
-    width: 36px;
-    height: 36px;
-    background-position: -143px -5px;
+.copyright a{
+    position: relative;
 }
-.social-youtube, .social-youtube:hover {
-    width: 36px;
-    height: 36px;
-    background-position: -189px -5px;
+.copyright a:after {
+    content: " ";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #5b7481;
+    transition: 1s;
+}
+.copyright a:hover:after{
+    background: #fff;
 }

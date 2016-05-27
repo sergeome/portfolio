@@ -114,12 +114,12 @@
     }
 
     /*Modifying styles for the buttons - send and cta buttons*/
-    .cta-button {
+    .button {
         box-sizing: border-box;
         width: 296px;
         padding: 16px 0;
     }
-    .cta-button:after{
+    .button:after{
         display: none;
     }
 
@@ -162,7 +162,7 @@
     .contact {
         padding: 5% 10%;
     }
-    .send-button {
+    .send {
         padding: 16px 0;
         width: 50%;
         box-sizing: border-box;
@@ -182,10 +182,7 @@
 /*Added breakpoint in order to fix buttons behavior on small screen resolutions*/
 @media screen and (max-width: 400px){
     
-    .cta-button {
-        width: 100%;
-    }
-    .send-button {
+    .button {
         width: 100%;
     }
 }
