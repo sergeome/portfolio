@@ -10,6 +10,7 @@
 
 /*Make .work-items display in a column*/
 /*Experience section restyle*/
+/*Skills restyle*/
 @media screen and (max-width: 980px) {
     .work-items {
         margin: 2em 5% 0;
@@ -27,6 +28,21 @@
         left: -319px;
         /*250+45-6*/
     }
+
+    /*Skills restyling*/
+    .skills-list {
+        float: none;
+        width: 80%;
+    }
+    ul.extra-skills {
+        float: none;
+        margin: 50px auto 0;
+        width: 80%;
+    }
+    ul.extra-skills li {
+        text-align: justify;
+    }
+
 }
 
 /*Menu restyle and reduce social icons margin*/
@@ -160,8 +176,12 @@
     
     /*Modifying styles for the SKILLS setcion*/
     .skills-wrapper {
-        margin: 5% 0;
-        padding: 0 10%;
+        /*margin: 5% 0;*/
+        /*padding: 0 10%;*/
+
+    }
+    .skills-list, ul.extra-skills {
+        width: 90%;
     }
 
     /*Modifying styles for CONTACT section*/
@@ -189,7 +209,7 @@
     }
 
     .timeline ul.timelist li.timeitem .timeblock {
-        width: calc(100vw - 180px);
+        width: calc(100vw - 230px);
     }
 
     .timeline ul.timelist li.timeitem:nth-child(even) .timeblock {
@@ -203,9 +223,23 @@
     }
 }
 
-/*Experience section restyle for mobile*/
+/*Skills restyle*/
 @media screen and (max-width: 600px) {
-
+    .skill-name {
+        font-size: 14px;
+        width: 27%;
+    }
+    .skill, .loader, .loader-bar {
+        height: 43px;
+    }
+    .loader {
+        margin-left: 27%;
+        width: 73%;
+    }
+    .percent {
+        font-size: 13px;
+        top: -2px;
+    }
 }
 
 /*Added breakpoint in order to fix buttons behavior on small screen resolutions*/
