@@ -99,6 +99,7 @@ header {
     display: inline-block;
     float: left;
     background: url("../images/border.png") no-repeat right;
+    transition: 0.4s;
 }
 .top-menu li:last-child {
     background: none;
@@ -130,7 +131,7 @@ header {
 /*ABOUT Section*/
 .about{
     position: relative;
-    background: url("../images/slider/slider1.png") no-repeat top center;
+    background: url("../images/about.png") no-repeat top center;
 }
 .about-wrapper {
     margin: 0 auto;
@@ -196,6 +197,9 @@ header {
 .work-item {
     margin: auto;
     max-width: 400px;
+}
+.work-item a {
+    transition: 0.5s;
 }
 .work-item a:hover {
     opacity: 0.7;
@@ -476,7 +480,7 @@ footer h5 {
     display: inline-block;
     width: 36px;
     height: 36px;
-    background: url(../images/social/social.png) no-repeat top center;
+    background: url(../images/social.png) no-repeat top center;
     margin-right: 14px;
 }
 .linkedin {
@@ -523,4 +527,8 @@ footer h5 {
     height: 64px;
     right: 20px;
     bottom: 20px;
+    opacity: 0.7;
+}
+.back:hover {
+    opacity: 1;
 }
