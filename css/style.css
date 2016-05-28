@@ -77,6 +77,9 @@ header {
     display: block;
     float: left;
 }
+.logo img {
+    border-radius: 50%;
+}
 .title {
     display: block;
     float: left;
