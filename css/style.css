@@ -236,6 +236,10 @@ header {
     background: #00AE86;
     text-align: center;
     padding: 50px 0 60px;
+    overflow: hidden;
+}
+.experience-wrapper {
+    margin: 0 auto;
 }
 .timeline {
     margin: 50px 0 0 0;

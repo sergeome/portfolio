@@ -40,7 +40,7 @@ $(document).ready(function () {
         } else {
             jQuery(".back").fadeOut(duration);
         }
-
+    
     });
     jQuery(".back").click(function(event) {
         event.preventDefault();

@@ -1,18 +1,15 @@
-/*Adding left indent for header*/
+/*Adding left indent for header and skills*/
 @media screen and (max-width: 1170px) {
     .header-wrapper{
         margin-left: 2%;
     }
-}
-
-/*Adding indents for skills section*/
-@media screen and (max-width: 1018px) {
     .skills-wrapper {
         padding: 0 20px;
     }
 }
 
 /*Make .work-items display in a column*/
+/*Experience section restyle*/
 @media screen and (max-width: 980px) {
     .work-items {
         margin: 2em 5% 0;
@@ -20,6 +17,15 @@
     .work-item:nth-child(odd), .work-item:nth-child(even){
         float: none;
         margin: 0 auto;
+    }
+
+    /*Experience section restyle*/
+    .timeline ul.timelist li.timeitem .timeblock {
+        width: 250px;
+    }
+    .timeline ul.timelist li.timeitem:nth-child(even) .timeblock {
+        left: -319px;
+        /*250+45-6*/
     }
 }
 
@@ -177,12 +183,39 @@
         text-align: center;
         margin: 20px 0;
     }
+
+    .timeline ul.timelist li.timeitem {
+        margin-left: 20px;
+    }
+
+    .timeline ul.timelist li.timeitem .timeblock {
+        width: calc(100vw - 180px);
+    }
+
+    .timeline ul.timelist li.timeitem:nth-child(even) .timeblock {
+        left: 45px;
+    }
+
+    .timeline ul.timelist li.timeitem:nth-child(even) .timeblock:before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent #F45B69 transparent transparent;
+    }
+}
+
+/*Experience section restyle for mobile*/
+@media screen and (max-width: 600px) {
+
 }
 
 /*Added breakpoint in order to fix buttons behavior on small screen resolutions*/
+/*Reduce size of the timeline content*/
 @media screen and (max-width: 400px){
-    
     .button {
         width: 100%;
     }
+    .duty, time, .timeline p {
+     font-size: 13px;
+    }
+
 }
