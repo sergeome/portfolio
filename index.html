@@ -1,27 +1,21 @@
-<!doctype html>
-<!--TODO refactor with HTML5 tags-->
-<!--TODO assign values to alt tags-->
-<!--TODO implement time-line-->
-<!--TODO remove unnecessary tags-->
-<!--TODO replace JQuery with more simple script (smooth navigation)-->
-<!--TODO make sprites for the social networks-->
-<!--TODO optimize Header tags-->
-<!--TODO Объеденить epam в одно-->
-<html xmlns:javascript="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Sergeome</title>
+	<title>Sergeome personal web-page</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<script src="js/jquery-1.12.4.min.js"></script>
 	<script src="js/main.js"></script>
 	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Front-end developer sergeome. Websites development. Simple landing pages, WordPress. Any custom solution you need.">
 </head>
 <body>
 <header id="header">
 	<div class="header-wrapper">
 		<div class="logo">
-			<a><img src="images/photo.jpg" class="logo" alt=""></a>
+			<a><img src="images/photo.jpg" class="logo" alt="photo"></a>
 			<div class="title">
 				<a href="http://sergeome.com"><h1>sergeome.com</h1></a>
 			</div>
@@ -39,7 +33,7 @@
 	<div class="about-wrapper">
 		<h3>Hi, I'm Sergey.</h3>
 		<h4>Front-end developer</h4>
-		<img class="indent-line" src="images/slider-border.png" alt="">
+		<img class="indent-line" src="images/slider-border.png" alt="indent-line">
 		<div class="about-content-wrapper">
 			<div class="about-content">Responsible (don't mix up with responsive) programmer.<br> I'm working with web based technologies. </div>
 		</div>
@@ -56,27 +50,27 @@
 				<div class="work-description">Responsive e-commerce HTML mockup</div>
 			</article>
 			<article class="work-item">
-				<a href="http://slounik.tk" target="_blank"><img src="content-images/works/slounik.png" alt=""></a>
+				<a href="http://slounik.tk" target="_blank"><img src="content-images/works/slounik.png" alt="belarussian-dictionary"></a>
 				<div class="work-title">Online Dictionary</div>
 				<div class="work-description">Belarussian Dictionary based on Wordpress.</div>
 			</article>
 			<article class="work-item">
-				<a href="http://itsgood.by" target="_blank"><img src="content-images/works/news-portal.png" alt=""></a>
+				<a href="http://itsgood.by" target="_blank"><img src="content-images/works/news-portal.png" alt="news-portal"></a>
 				<div class="work-title">News portal</div>
 				<div class="work-description">Belarussian news portal based on Wordpress</div>
 			</article>
 			<article class="work-item">
-				<a href="http://server.sergeome.com/portfolio/clear-landing-page/" target="_blank"><img src="content-images/works/simple-landing.png" alt=""></a>
+				<a href="http://server.sergeome.com/portfolio/clear-landing-page/" target="_blank"><img src="content-images/works/simple-landing.png" alt="realtor-landing"></a>
 				<div class="work-title">Realtor landing</div>
 				<div class="work-description">Pixel Perfect replication from PSD mockup</div>
 			</article>
 			<article class="work-item">
-				<a href="http://server.sergeome.com/portfolio/newsletter/" target="_blank"><img src="content-images/works/sheep.png" alt=""></a>
+				<a href="http://server.sergeome.com/portfolio/newsletter/" target="_blank"><img src="content-images/works/sheep.png" alt="newsletter"></a>
 				<div class="work-title">Newsletter template</div>
 				<div class="work-description">Pixel Perfect replication from PSD mockup</div>
 			</article>
 			<article class="work-item">
-				<a href="http://server.sergeome.com/portfolio/whitesquare/" target="_blank"><img src="content-images/works/whitesquare.png" alt=""></a>
+				<a href="http://server.sergeome.com/portfolio/whitesquare/" target="_blank"><img src="content-images/works/whitesquare.png" alt="whitesquare"></a>
 				<div class="work-title">Whitesquare template</div>
 				<div class="work-description">Created mockup as a training</div>
 			</article>
@@ -86,10 +80,10 @@
 <section id="experience" class="experience">
 	<div class="experience-wrapper">
 		<h5>Employment and education</h5>
-		<section class="timeline">
+		<div class="timeline">
 			<ul class="timelist">
 				<li class="timeitem">
-					<div class="timeblock">
+					<article class="timeblock">
 						<time>September 2014 - Present</time>
 						<p>HTML & CSS developer (Contactor)</p>
 						<div class="duty">
@@ -100,10 +94,10 @@
 								<li>VPS/VDS hosting installation (LAMP server)</li>
 							</ul>
 						</div>
-					</div>
+					</article>
 				</li>
 				<li class="timeitem">
-					<div class="timeblock">
+					<article class="timeblock">
 						<time>May 2014 - March 2016</time>
 						<p>EPAM</p>
 						<p>Software testing Engineer</p>
@@ -115,10 +109,10 @@
 								<li>Web (responsive) and mobile apps testing</li>
 							</ul>
 						</div>
-					</div>
+					</article>
 				</li>
 				<li class="timeitem">
-					<div class="timeblock">
+					<article class="timeblock">
 						<time>March 2012 - August 2013</time>
 						<p>ITCO</p>
 						<p>System Administrator</p>
@@ -130,10 +124,10 @@
 								<li>Configuring of switchboards, modems, routers</li>
 							</ul>
 						</div>
-					</div>
+					</article>
 				</li>
 				<li class="timeitem education">
-					<div class="timeblock">
+					<article class="timeblock">
 						<time>2013 - 2014</time>
 						<p>Polytechnic University of Turin</p>
 						<p>Telecommunication engineering (Exchange program)</p>
@@ -144,10 +138,10 @@
 								<li>Networks based on cisco program</li>
 							</ul>
 						</div>
-					</div>
+					</article>
 				</li>
 				<li class="timeitem">
-					<div class="timeblock">
+					<article class="timeblock">
 						<time>2009 - 2014</time>
 						<p>Yanka Kupala State University of Grodno</p>
 						<p>Information and measurement technology (Bachelor)</p>
@@ -158,10 +152,10 @@
 								<li>Projects with ActiveX; TCP/UDP, FTP protocols</li>
 							</ul>
 						</div>
-					</div>
+					</article>
 				</li>
 			</ul>
-		</section>
+		</div>
 	</div>
 </section><!--experience-->
 <section class="skills">
@@ -225,6 +219,6 @@
 		<p class="copyright">© 2016 <a href="http://sergeome.com">Sergey Kryvets</a>. All rights reserved.</p>
 	</div>
 </footer><!--footer-->
-<!--<a href="#header" class="back"></a>-->
+<a href="#header" class="back"></a>
 </body>
 </html>
