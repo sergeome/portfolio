@@ -40,7 +40,7 @@
         width: 80%;
     }
     ul.extra-skills li {
-        text-align: justify;
+        text-align: left;
     }
 
 }
@@ -205,12 +205,6 @@
     }
 
     /*Modifying styles of FOOTER*/
-    .follow-us {
-        float: none;
-        text-align: center;
-        margin: 20px 0;
-    }
-
     .timeline ul.timelist li.timeitem {
         margin-left: 20px;
     }
