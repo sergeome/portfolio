@@ -109,11 +109,9 @@
         background: none;
     }
 
-    /*Reduce social icons left margin*/
-    .social {
-        margin: 0 0 0 10px;
+    .footer-wrapper {
+        padding: 0 5%;
     }
-
 }
 
 /*Redefine styles for the mobile version*/
@@ -137,6 +135,8 @@
 
     /*Modifying styles for the buttons - send and cta buttons*/
     .button {
+        display: block;
+        margin: 0 auto;
         box-sizing: border-box;
         width: 296px;
         padding: 16px 0;
@@ -185,19 +185,26 @@
     }
 
     /*Modifying styles for CONTACT section*/
-    .contact {
-        padding: 5% 10%;
+    footer {
+        padding: 6% 0;
+    }
+    .footer-wrapper {
+        padding: 0 10%;
+        margin: 0 auto;
+    }
+    .footer-wrapper h5 {
+        margin: 0 0 15px 0;
+    }
+    .availability {
+        margin-bottom: 25px;
     }
     .send {
+        margin-top: 50px;
         padding: 16px 0;
-        width: 50%;
         box-sizing: border-box;
     }
 
     /*Modifying styles of FOOTER*/
-    .footer-wrapper {
-        padding: 0;
-    }
     .follow-us {
         float: none;
         text-align: center;
