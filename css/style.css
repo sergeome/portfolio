@@ -101,7 +101,6 @@ header {
     display: inline-block;
     float: left;
     background: url("../images/border.png") no-repeat right;
-    transition: 0.4s;
 }
 .top-menu li:last-child {
     background: none;
