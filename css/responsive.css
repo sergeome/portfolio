@@ -235,6 +235,8 @@
     .skill-name {
         font-size: 14px;
         width: 27%;
+        height: 43px;
+        box-sizing: border-box;
     }
     .skill, .loader, .loader-bar {
         height: 43px;
