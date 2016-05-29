@@ -216,7 +216,7 @@
     }
 
     .timeline ul.timelist li.timeitem .timeblock {
-        width: calc(100vw - 230px);
+        width: calc(100vw - 190px);
     }
 
     .timeline ul.timelist li.timeitem:nth-child(even) .timeblock {
