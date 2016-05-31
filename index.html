@@ -1,143 +1,225 @@
-<!doctype html>
-<html xmlns:javascript="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<title>Sergeome</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/responsive.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="js/responsiveslides.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.min.css">
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/analytics.js"></script>
 	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Front-end developer sergeome. Websites development. Simple landing pages, WordPress. Any custom solution you need.">
 </head>
 <body>
-<header>
+<header id="header">
 	<div class="header-wrapper">
 		<div class="logo">
-			<a><img src="images/photo/photo.png" class="logo" alt=""></a>
+			<a><img src="images/photo.jpg" class="logo" alt="photo"></a>
 			<div class="title">
-				<a href="#"><h1>SERGEOME</h1></a>
+				<a href="http://sergeome.com"><h1>sergeome.com</h1></a>
 			</div>
 		</div>
 		<a class="mobile-menu-switcher" href="javascript:void(0);" onclick="mobileMenuAction()">&#9776;</a>
 		<ul class="top-menu">
-			<li><a href="#front">About</a></li>
-			<li><a href="#experience">Work</a></li>
-			<li><a href="#skills">Skills</a></li>
-			<li><a href="#portfolio">Education</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#works">Work</a></li>
+			<li><a href="#experience">experience</a></li>
 			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</div>
 </header><!--header-->
-<div id="front" class="about">
+<section id="about" class="about">
 	<div class="about-wrapper">
-		<h3>Hello, I'm Sergey.</h3>
-		<h4>Web-developer</h4>
-		<img class="indent-line" src="images/slider-border.png" alt="">
+		<h3>Hi, I'm Sergey.</h3>
+		<h4>Front-end developer</h4>
+		<img class="indent-line" src="images/slider-border.png" alt="indent-line">
 		<div class="about-content-wrapper">
-			<div class="about-content">I'm working with HTML & CSS. Know about jquery</div>
+			<div class="about-content">Responsible (don't mix up with responsive) programmer.<br> I'm working with web based technologies. </div>
 		</div>
-		<a href="#portfolio" class="cta-button">My work</a>
+		<a href="#works" class="button">See recent works</a>
 	</div>
-</div><!--about-->
-<div id="experience" class="experience">
+</section><!--about-->
+<section id="works" class="works">
+	<div class="works-wrapper">
+		<h5>Recent works</h5>
+		<div class="work-items">
+			<article class="work-item">
+				<a href="http://server.sergeome.com/portfolio/atii-ecommerce/" target="_blank"><img src="content-images/works/ecommerce.png" alt="ecommerce"></a>
+				<div class="work-title">Ecommerce template</div>
+				<div class="work-description">Responsive e-commerce HTML mockup</div>
+			</article>
+			<article class="work-item">
+				<a href="http://slounik.tk" target="_blank"><img src="content-images/works/slounik.png" alt="belarussian-dictionary"></a>
+				<div class="work-title">Online Dictionary</div>
+				<div class="work-description">Belarussian Dictionary based on Wordpress.</div>
+			</article>
+			<article class="work-item">
+				<a href="http://itsgood.by" target="_blank"><img src="content-images/works/news-portal.png" alt="news-portal"></a>
+				<div class="work-title">News portal</div>
+				<div class="work-description">Belarussian news portal based on Wordpress</div>
+			</article>
+			<article class="work-item">
+				<a href="http://server.sergeome.com/portfolio/clear-landing-page/" target="_blank"><img src="content-images/works/simple-landing.png" alt="realtor-landing"></a>
+				<div class="work-title">Realtor landing</div>
+				<div class="work-description">Pixel Perfect replication from PSD mockup</div>
+			</article>
+			<article class="work-item">
+				<a href="http://server.sergeome.com/portfolio/newsletter/" target="_blank"><img src="content-images/works/sheep.png" alt="newsletter"></a>
+				<div class="work-title">Newsletter template</div>
+				<div class="work-description">Pixel Perfect replication from PSD mockup</div>
+			</article>
+			<article class="work-item">
+				<a href="http://server.sergeome.com/portfolio/whitesquare/" target="_blank"><img src="content-images/works/whitesquare.png" alt="whitesquare"></a>
+				<div class="work-title">Whitesquare template</div>
+				<div class="work-description">Created mockup as a training</div>
+			</article>
+		</div>
+	</div>
+</section><!--works-->
+<section id="experience" class="experience">
 	<div class="experience-wrapper">
-		<h5>My Works</h5>
-		<ul class="portfolio-images">
-			<li><a href="#"></a><img class="img-circle" src="images/portfolio1.png" alt=""><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consectetur porttitor quam non tincidunt.</p></li>
-			<li><a href="#"></a><img class="img-circle" src="images/portfolio2.png" alt=""><p>Lorem ipsum dolor sit amet.</p></li>
-			<li><a href="#"></a><img class="img-circle" src="images/portfolio3.png" alt=""></li>
-			<li><a href="#"></a><img class="img-circle" src="images/portfolio4.png" alt=""></li>
-		</ul>
-		<img class="indent-line" src="images/experience-line.png" alt="">
-		<div class="experience-content">Sometimes we look more better. Especially when we changed our faces in Photoshop. If you want an autogram. No problem. Just give us a 100 bucks and you can have ;)
-		</div>
-	</div>
-</div><!--experience-->
-<div id="portfolio" class="portfolio">
-	<div class="portfolio-wrapper">
-		<h5>Heeey! Just look on our portfolio. That we are huge</h5>
-		<div class="portfolio-subtitle">you know, curved hands are curved hands ;)</div>
-		<div class="employees">
-			<div class="employee">
-				<img src="images/Sonjoe.png" alt="">
-				<div class="employee-name">Sonjoe</div>
-				<div class="employee-position">UI/UX, Designs, HTML & CSS</div>
-			</div>
-			<div class="employee">
-				<img src="images/Cohut.png" alt="">
-				<div class="employee-name">Kohut</div>
-				<div class="employee-position">UI/UX, Designs, HTML5 & CSS3, CMS</div>
-			</div>
-			<div class="employee">
-				<img src="images/Fuxxo.png" alt="">
-				<div class="employee-name">Fuxxo</div>
-				<div class="employee-position">UI/UX, Designs</div>
-			</div>
-		</div>
-		<a class="cta-button" href="#contact">Do you want? Contact us!</a>
-	</div>
-</div><!--portfolio-->
-<script>
-	$(function () {
-		// Slideshow 1
-		$(".rslides").responsiveSlides({
-			auto: true,
-			nav: true,
-			speed: 500,
-			prevText: "",   // String: Text for the "previous" button
-			nextText: "",
-			navContainer: "slider-container"
-		});
-	});
-</script>
-<div class="testimonials">
-	<div class="testimonials-wrapper">
-		<h5>Clients says</h5>
-		<div class="testimonials-content" id="slider-container">
-			<ul class="rslides">
-				<li>
-					<div class="testimonials-feedback">This three guys rocks. Wath they say, that they did. Not like a lier lier Jimm Carrey. They souls will have a nice wonderfull power for the further projects. I really recommend this hands curved guys, which have nice girls. Because they now it!</div>
+		<h5>Employment and education</h5>
+		<div class="timeline">
+			<ul class="timelist">
+				<li class="timeitem">
+					<article class="timeblock">
+						<time>September 2014 - Present</time>
+						<p>HTML & CSS developer (Contactor)</p>
+						<div class="duty">
+							<ul>
+								<li>Web sites implementation (including responsive)</li>
+								<li>Pixel perfect replication from the PSD files</li>
+								<li>Wordpress development</li>
+								<li>VPS/VDS hosting installation (LAMP server)</li>
+							</ul>
+						</div>
+					</article>
 				</li>
-				<li>
-					<div class="testimonials-feedback">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus, risus at posuere fringilla, sem elit ullamcorper ipsum, ut consectetur ipsum ante sed magna. Sed nec facilisis dui. Quisque ultrices erat vel enim faucibus viverra.</div>
+				<li class="timeitem">
+					<article class="timeblock">
+						<time>May 2014 - March 2016</time>
+						<p>EPAM</p>
+						<p>Software testing Engineer</p>
+						<div class="duty">
+							<ul>
+								<li>Functional testing</li>
+								<li>Requirement analysis</li>
+								<li>Communication with customer</li>
+								<li>Web (responsive) and mobile apps testing</li>
+							</ul>
+						</div>
+					</article>
 				</li>
-				<li>
-					<div class="testimonials-feedback">Ut sit amet nunc urna. Nulla accumsan urna non fermentum dignissim. Morbi non nunc non nisl auctor lobortis sed at lectus. Donec ac hendrerit dolor, suscipit pulvinar neque. Donec congue eget metus ac ultricies. Mauris quis ante urna. Duis et lorem ornare, volutpat ipsum quit.</div>
+				<li class="timeitem">
+					<article class="timeblock">
+						<time>March 2012 - August 2013</time>
+						<p>ITCO</p>
+						<p>System Administrator</p>
+						<div class="duty">
+							<ul>
+								<li>Networks creation</li>
+								<li>Operating system reinstallation</li>
+								<li>Data save and restore</li>
+								<li>Configuring of switchboards, modems, routers</li>
+							</ul>
+						</div>
+					</article>
+				</li>
+				<li class="timeitem education">
+					<article class="timeblock">
+						<time>2013 - 2014</time>
+						<p>Polytechnic University of Turin</p>
+						<p>Telecommunication engineering (Exchange program)</p>
+						<div class="duty">
+							<ul>
+								<li>Operating systems (Linux's kernel, bash/awk)</li>
+								<li>Programming languages and algorithms</li>
+								<li>Networks based on cisco program</li>
+							</ul>
+						</div>
+					</article>
+				</li>
+				<li class="timeitem">
+					<article class="timeblock">
+						<time>2009 - 2014</time>
+						<p>Yanka Kupala State University of Grodno</p>
+						<p>Information and measurement technology (Bachelor)</p>
+						<div class="duty">
+							<ul>
+								<li>"Broadcast TCP/UDP server for ADAM-5510 controller" research</li>
+								<li>SCADA & PLC</li>
+								<li>Projects with ActiveX; TCP/UDP, FTP protocols</li>
+							</ul>
+						</div>
+					</article>
 				</li>
 			</ul>
 		</div>
-		<a class="narrow-left rslides1_nav rslides2_nav prev" href="#"></a>
-		<a class="narrow-right rslides1_nav rslides2_nav next" href="#"></a>
-		<img class="indent-line" src="images/experience-line.png" alt="">
-		<ul class="rslides">
-			<li><p class="author-info"><span class="author-name">Albert Zweistein</span> | unsuccessful scientist</p>
-			</li>
-			<li><p class="author-info"><span class="author-name">Madison West</span> | UX designer</p></li>
-			<li><p class="author-info"><span class="author-name">Gordon Holmes</span> | famous writer</p></li>
-		</ul>
 	</div>
-</div>
-<!--testimonials-->
-<div id="contact" class="contact-form">
-	<h5>Contact information</h5>
-	<div class="feedback-form">
-		<a class="cta-button" href="#">Download my CV</a>
-		<a class="send-button" href="#">Hire me</a>
-	</div>
-</div>
-<!--contact-form-->
-<footer>
-	<div class="footer-wrapper">
-		<div class="social">
-			<a href="#" class="social-icon social-facebook social-active"></a>
-			<a href="#" class="social-icon social-linkedin"></a>
-			<a href="#" class="social-icon social-pinterest"></a>
-			<a href="#" class="social-icon social-twitter"></a>
-			<a href="#" class="social-icon social-youtube"></a>
+</section><!--experience-->
+<section class="skills">
+	<div class="skills-wrapper">
+		<h5>What I know</h5>
+		<div class="skills-content">
+			<ul class="skills-list" id="skills-list">
+				<li class="skill">
+					<div class="skill-name">HTML</div>
+					<div class="loader">
+						<div class="loader-bar" data-percent="80%"></div>
+					</div>
+					<div class="percent">80%</div>
+				</li>
+				<li class="skill">
+					<div class="skill-name">CSS</div>
+					<div class="loader">
+						<div class="loader-bar" data-percent="70%"></div>
+					</div>
+					<div class="percent">70%</div>
+				</li>
+				<li class="skill">
+					<div class="skill-name">JQuery</div>
+					<div class="loader">
+						<div class="loader-bar" data-percent="30%"></div>
+					</div>
+					<div class="percent">30%</div>
+				</li>
+				<li class="skill">
+					<div class="skill-name">PHP</div>
+					<div class="loader">
+						<div class="loader-bar" data-percent="20%"></div>
+					</div>
+					<div class="percent">20%</div>
+				</li>
+			</ul>
+			<ul class="extra-skills">
+				<li>
+					<p>Additional FRONT-END technologies, preprocessors, engines and frameworks I work with:<span>LESS</span><span>Bootstrap 3 framework</span><span>WordPress</span><span>Javascirpt</span>
+					</p>
+				</li>
+				<li><p>Project or team related technologies and tools I know:
+					<span>Jira</span><span>GIT</span><span>INvision</span><span>Trello</span></p></li>
+				<li><p>Technologies I worked with: <span>Adobe AEM 5.6</span><span>Hybris</span></p></li>
+				<li><p>As System Administrator I know: <span>Linux</span><span>VPS/VDS</span></p></li>
+			</ul>
 		</div>
 	</div>
-</footer>
-<!--footer-->
+</section><!--skills-->
+<footer>
+	<div class="footer-wrapper" id="contact">
+		<h5>Contact information</h5>
+		<p class="availability">I’m currently available for work. If you want to hire me, think you need my help or just saying hey, then get in touch with me.</p>
+		<a class="button" href="https://drive.google.com/file/d/0BxWxhRhs7vIqeHhxWFg4V1dSSXc/view?usp=sharing" target="_blank">Download my CV</a>
+		<a class="button send" href="mailto:sergeome@gmail.com">Hire me</a>
+		<div class="social">
+			<a href="https://www.linkedin.com/in/sergeome" target="_blank" class="icon linkedin"></a>
+			<a href="https://bitbucket.org/sergeome/" target="_blank" class="icon github"></a>
+			<a href="https://github.com/sergeome" target="_blank" class="icon bitbucket"></a>
+		</div>
+		<p class="copyright">© 2016 <a href="http://sergeome.com">Sergey Kryvets</a>. All rights reserved.</p>
+	</div>
+</footer><!--footer-->
+<a href="#header" class="back"></a>
 </body>
 </html>

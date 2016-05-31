@@ -1,45 +1,56 @@
+/*Adding left indent for header and skills*/
 @media screen and (max-width: 1170px) {
-
-}
-@media screen and (max-width: 1018px) {
-
-    .employee{
-        margin: 0 10%;
+    .header-wrapper{
+        margin: 0 2%;
     }
-
-    .portfolio-images{
-        margin: 0 0 59px;
-    }
-
-    .portfolio-images li {
-        margin: 55px 0 0;
-    }
-
-    .portfolio-images li:nth-child(2n){
-        margin-right: 15%;
-    }
-
-    .portfolio-images li:nth-child(1n){
-        margin-left: 15%;
-    }
-
-    .testimonials-wrapper {
+    .skills-wrapper {
         padding: 0 20px;
     }
+}
+
+/*Make .work-items display in a column*/
+/*Experience section restyle*/
+/*Skills restyle*/
+@media screen and (max-width: 980px) {
+    .work-items {
+        margin: 2em 5% 0;
+    }
+    .work-item:nth-child(odd), .work-item:nth-child(even){
+        float: none;
+        margin: 0 auto;
+    }
+
+    /*Experience section restyle*/
+    .timeline ul.timelist li.timeitem .timeblock {
+        width: 250px;
+    }
+    .timeline ul.timelist li.timeitem:nth-child(even) .timeblock {
+        left: -319px;
+        /*250+45-6*/
+    }
+
+    /*Skills restyling*/
+    .skills-list {
+        float: none;
+        width: 80%;
+    }
+    ul.extra-skills {
+        float: none;
+        margin: 50px auto 0;
+        width: 80%;
+    }
+    ul.extra-skills li {
+        text-align: left;
+    }
 
 }
 
+/*Menu restyle and reduce social icons margin*/
 @media screen and (max-width: 920px) {
 
     .top-menu li:not(:last-child) {
         background: none;
     }
-
-    /*Disable narrows in the testimonials content*/
-    .narrow-left, .narrow-right {
-        display: none;
-    }
-
     /*Hide elements on the main menu*/
     ul.top-menu {
         display: none;
@@ -52,13 +63,11 @@
         display: block;
         float: right;
         margin: 0 20px 0 0;
-        /*background: url("../images/mobile_menu.png");*/
         font-size: 30px;
         -webkit-tap-highlight-color: rgba(0,0,0,0);
     }
 
     /*Create mobile menu name "responsive" and overwrite styles of top-menu*/
-
     ul.top-menu.responsive {
         clear: both;
         display: block;
@@ -66,7 +75,6 @@
         overflow: hidden;
         margin: 70px 0 0;
     }
-
     ul.top-menu.responsive li {
         clear: both;
         display: block;
@@ -75,63 +83,47 @@
         text-align: center;
         border-top: 1px solid rgba(118, 161, 184, .2);
     }
-
     ul.top-menu.responsive li:first-child {
         border-top: none;
     }
-
-
     ul.top-menu.responsive li.active {
         background: none;
     }
-
     ul.top-menu.responsive li.active a{
         color: #ffffff;
         -webkit-tap-highlight-color: rgba(0,0,0,0);
     }
-
     ul.top-menu.responsive li a{
         -webkit-tap-highlight-color: rgba(0,0,0,0);
     }
-
     ul.top-menu.responsive li.active:hover {
         color: #ffffff;
     }
-
     ul.top-menu.responsive li a:hover{
         color: #ffffff;
     }
-
     ul.top-menu.responsive li:hover {
         background: none;
     }
-
     ul.top-menu.responsive li:first-child{
         background: none;
     }
 
-    /*Reduce social icons left margin*/
-
-    .social {
-        margin: 0 0 0 10px;
+    .footer-wrapper {
+        padding: 0 5%;
     }
-
 }
 
-/*Implemented styles for the mobile menu*/
-
+/*Redefine styles for the mobile version*/
 @media screen and (max-width: 715px) {
 
     /*Fonts overwriting*/
-
     h3 {
         font-size: 32px;
     }
-
     h4 {
         font-size: 19px;
     }
-
     h5 {
         font-size: 28px;
     }
@@ -142,126 +134,125 @@
     }
 
     /*Modifying styles for the buttons - send and cta buttons*/
-
-    .cta-button {
+    .button {
+        display: block;
+        margin: 0 auto;
         box-sizing: border-box;
         width: 296px;
         padding: 16px 0;
     }
-
-    .cta-button:after{
+    .button:after{
         display: none;
     }
 
-    /*Modifying styles for the Slider*/
-
-    .slider-wrapper {
+    /*Modifying styles for the ABOUT section*/
+    .about-wrapper {
         padding: 10% 10% 12%;
     }
-
     .indent-line {
         display: none;
     }
-
-
-    .slider-content-wrapper {
+    .about-content-wrapper {
         margin-top: 8%;
         margin-bottom: 8%;
     }
 
-
-    /*Modifying styles for the Team section*/
-
-    .team {
+    /*Modifying styles for the WORKS section*/
+    .works {
         padding: 5% 0;
     }
-
-    .team-wrapper {
+    .works-wrapper {
         padding: 0 10%;
     }
 
-    .employees {
-        margin: 0;
-    }
-
-    /*Employee displaying in a column*/
-    .employee {
-        display: block;
-        margin: 30px 0 0 0 !important;
-    }
-
-
-    /*Modifying styles for the Portfolio section*/
-
-    .portfolio-wrapper{
+    /*Modifying styles for the EXPERIENCE section*/
+    .experience-wrapper{
         padding: 0 10%;
     }
 
-    .portfolio {
+    .experience {
         padding: 5% 0;
     }
+    
+    /*Modifying styles for the SKILLS setcion*/
+    .skills-wrapper {
+        /*margin: 5% 0;*/
+        /*padding: 0 10%;*/
 
-    .portfolio-images li {
-        display: block;
-        margin: 30px auto !important;
+    }
+    .skills-list, ul.extra-skills {
+        width: 90%;
     }
 
-
-    /*Modifying styles for the Testimonials setcion*/
-
-    .testimonials-wrapper {
-        margin: 5% 0;
+    /*Modifying styles for CONTACT section*/
+    footer {
+        padding: 6% 0;
+    }
+    .footer-wrapper {
         padding: 0 10%;
+        margin: 0 auto;
     }
-
-    /*Modifying styles for Contact Form*/
-
-    .contact-form {
-        padding: 5% 10%;
+    .footer-wrapper h5 {
+        margin: 0 0 15px 0;
     }
-
-    .low-input {
-        width: 100%;
+    .availability {
+        margin-bottom: 25px;
     }
-
-    .message-input {
-        width: 100%;
-    }
-
-    .send-button {
+    .send {
+        margin-top: 50px;
         padding: 16px 0;
-        width: 50%;
         box-sizing: border-box;
     }
 
-    /*Modifying styles of footer */
-
-    .footer-wrapper {
-        padding: 0;
+    /*Modifying styles of FOOTER*/
+    .timeline ul.timelist li.timeitem {
+        margin-left: 20px;
     }
 
-    .follow-us {
-        float: none;
-        text-align: center;
-        margin: 20px 0;
+    .timeline ul.timelist li.timeitem .timeblock {
+        width: calc(100vw - 190px);
     }
 
-    .copyright {
-        float: none;
-        margin: 20px auto;
-        text-align: center;
+    .timeline ul.timelist li.timeitem:nth-child(even) .timeblock {
+        left: 45px;
     }
 
-    /*Added breakpoint in order to fix buttons behavior on small screen resolutions*/
-    @media screen and (max-width: 400px){
-
-        .cta-button {
-            width: 100%;
-        }
-
-        .send-button {
-            width: 100%;
-        }
-
+    .timeline ul.timelist li.timeitem:nth-child(even) .timeblock:before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent #F45B69 transparent transparent;
     }
+}
+
+/*Skills restyle*/
+@media screen and (max-width: 600px) {
+    .skill-name {
+        font-size: 14px;
+        width: 27%;
+        height: 43px;
+        box-sizing: border-box;
+    }
+    .skill, .loader, .loader-bar {
+        height: 43px;
+    }
+    .loader {
+        margin-left: 27%;
+        width: 73%;
+    }
+    .percent {
+        font-size: 13px;
+        top: -2px;
+    }
+}
+
+/*Added breakpoint in order to fix buttons behavior on small screen resolutions*/
+/*Reduce size of the timeline content*/
+@media screen and (max-width: 400px){
+    .button {
+        width: 100%;
+    }
+    .duty, time, .timeline p {
+     font-size: 13px;
+    }
+
 }
