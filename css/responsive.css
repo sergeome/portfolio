@@ -1,7 +1,7 @@
 /*Adding left indent for header and skills*/
 @media screen and (max-width: 1170px) {
     .header-wrapper{
-        margin-left: 2%;
+        margin: 0 2%;
     }
     .skills-wrapper {
         padding: 0 20px;
