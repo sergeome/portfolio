@@ -129,7 +129,6 @@ header {
 /*ABOUT Section*/
 .about{
     position: relative;
-    background: url("../images/about.png") no-repeat top center;
 }
 .about-wrapper {
     margin: 0 auto;

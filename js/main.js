@@ -10,6 +10,7 @@ $(document).ready(function () {
             rect.right <= (window.innerWidth || document.documentElement.clientWidth)
         );
     }
+
     var timelineItems = document.querySelectorAll(".timeline li.timeitem");
     var skillList = document.getElementById("skills-list");
 
@@ -34,28 +35,36 @@ $(document).ready(function () {
     var offset = 250;
     var duration = 300;
     jQuery(".back").css({"display": "none"});
-    jQuery(window).scroll(function() {
+    jQuery(window).scroll(function () {
         if (jQuery(this).scrollTop() > offset) {
             jQuery(".back").fadeIn(duration);
         } else {
             jQuery(".back").fadeOut(duration);
         }
-    
+
     });
-    jQuery(".back").click(function(event) {
+    jQuery(".back").click(function (event) {
         event.preventDefault();
         jQuery(".back").animate({scrollTop: 0}, duration);
         return false;
-    })
+    });
 
+});
+
+$(function(){
+    var aboutbg = new Image();
+    aboutbg.src="images/about.png";
+    $(".about").hide();
+    $(aboutbg).load(function(){
+        $(".about").css("background","url("+$(this).attr("src")+")", "no-repeat", "top", "center").fadeIn(1000);
+    });
 });
 
 
 //Mobile menu toggle
 function mobileMenuAction() {
     // $(".top-menu").slideToggle().toggleClass("responsive");
-    document.getElementsByClassName("top-menu")[0].classList.toggle("responsive").slideToggle();
-    // $(".responsive").slideToggle();
+    document.getElementsByClassName("top-menu")[0].classList.toggle("responsive");
 }
 
 //Smooth anchor transition on jquery
