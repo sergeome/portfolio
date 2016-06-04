@@ -124,9 +124,6 @@ header {
 .top-menu li a:hover {
     color: #76a1b8;
 }
-.top-menu li.mobile-menu-icon {
-    display: none;
-}
 
 
 /*ABOUT Section*/

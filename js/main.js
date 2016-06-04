@@ -53,7 +53,9 @@ $(document).ready(function () {
 
 //Mobile menu toggle
 function mobileMenuAction() {
-    document.getElementsByClassName("top-menu")[0].classList.toggle("responsive");
+    // $(".top-menu").slideToggle().toggleClass("responsive");
+    document.getElementsByClassName("top-menu")[0].classList.toggle("responsive").slideToggle();
+    // $(".responsive").slideToggle();
 }
 
 //Smooth anchor transition on jquery
