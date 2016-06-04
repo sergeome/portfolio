@@ -1,3 +1,4 @@
+//Waiting until page load
 $(window).load(function() {
     $(".page-load").fadeOut("slow");
 });
@@ -32,10 +33,12 @@ $(document).ready(function () {
             });
         }
     }
-
+    
+    //Tracking viewport
     window.addEventListener("load", callbackFunc);
     window.addEventListener("scroll", callbackFunc);
 
+    //Tracking back-to-top button
     var offset = 250;
     var duration = 300;
     jQuery(".back").css({"display": "none"});
@@ -55,6 +58,7 @@ $(document).ready(function () {
 
 });
 
+//Smooth animation for "about" bg image.
 $(function(){
     var aboutbg = new Image();
     aboutbg.src="images/about.png";
