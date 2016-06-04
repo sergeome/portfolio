@@ -1,3 +1,7 @@
+$(window).load(function() {
+    $(".page-load").fadeOut("slow");
+});
+
 $(document).ready(function () {
 
     //Timeline animation
@@ -60,10 +64,8 @@ $(function(){
     });
 });
 
-
 //Mobile menu toggle
 function mobileMenuAction() {
-    // $(".top-menu").slideToggle().toggleClass("responsive");
     document.getElementsByClassName("top-menu")[0].classList.toggle("responsive");
 }
 
