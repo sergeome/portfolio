@@ -64,7 +64,7 @@ $(function(){
     aboutbg.src="images/about.png";
     $(".about").hide();
     $(aboutbg).load(function(){
-        $(".about").css("background","url("+$(this).attr("src")+")", "no-repeat", "top", "center").fadeIn(1000);
+        $(".about").css("background","url("+$(this).attr("src")+") no-repeat top center").fadeIn(1000);
     });
 });
 
