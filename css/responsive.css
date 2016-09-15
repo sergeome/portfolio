@@ -46,7 +46,7 @@
 }
 
 /*Menu restyle and reduce social icons margin*/
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 960px) {
 
     .top-menu li:not(:last-child) {
         background: none;
