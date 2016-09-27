@@ -70,7 +70,19 @@ $(function(){
 
 //Mobile menu toggle
 function mobileMenuAction() {
-    document.getElementsByClassName("top-menu")[0].classList.toggle("responsive");
+    // $('.top-menu').toggleClass('responsive');
+    if($('.top-menu').hasClass('responsive')){
+        $('.top-menu').animate({
+            height: "hide"
+        }, 500, function() {
+            $(this).removeClass('responsive').css("display", "");
+        });
+    }else{
+
+        $('.top-menu').css("display", "none").addClass('responsive').animate({
+            height: "show"
+        }, 500);
+    }
 }
 
 //Smooth anchor transition on jquery
