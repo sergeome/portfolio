@@ -460,11 +460,14 @@ footer h5 {
     margin-bottom: 50px;
     font-style: italic;
 }
+.download-resume {
+    padding: 16px 46px;
+}
 .send {
     padding: 16px 83px;
     margin: 0 0 0 10%;
 }
-.send:after{
+.send:after, .download-resume:after{
     content: none;
 }
 
